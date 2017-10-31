@@ -1,0 +1,107 @@
+body, html {
+  background: #F5AB35;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", arial , helvetica ,sans-serif;
+}
+
+#maincontainer {
+  width: 100%;
+  height: 100%;
+  background: #F5AB35;
+}
+#maincontainer #categoryContainer {
+  background: #F5AB35;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+#maincontainer #categoryContainer #welcometxt {
+  background-color: #2a2a2a;
+  width: 100%;
+  height: 100px;
+  margin-top: 0;
+  position: relative;
+  border: 1px solid black;
+  border-bottom: none;
+  -webkit-box-shadow: 0px 0px 10px #2a2a2a;
+  -ms-box-shadow: 0px 0px 10px #2a2a2a;
+  -moz-box-shadow: 0px 0px 10px #2a2a2a;
+  -o-box-shadow: 0px 0px 10px #2a2a2a;
+  box-shadow: 0px 0px 10px #2a2a2a;
+}
+#maincontainer #categoryContainer #welcometxt h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #fff;
+  height: inherit;
+  width: inherit;
+  -ms-text-shadow: 0px 0px 5px #2a2a2a;
+  -webkit-text-shadow: 0px 0px 5px #2a2a2a;
+  -moz-text-shadow: 0px 0px 5px #2a2a2a;
+  -o-text-shadow: 0px 0px 5px #2a2a2a;
+  text-shadow: 0px 0px 5px #2a2a2a;
+}
+#maincontainer #categoryContainer .category {
+  background: #F5AB35;
+  border: 1px solid block;
+  width: 50%;
+  float: left;
+  height: 400px;
+  padding-top: 100px;
+}
+#maincontainer #categoryContainer .category .content {
+  background: #F5AB35;
+  width: 100%;
+  height: 100%;
+}
+#maincontainer #categoryContainer .category .content .logo {
+  width: 50%;
+  background: #F5AB35;
+  height: 70%;
+  margin: 0 auto;
+  -webkit-transition: ease-in 0.5s;
+  -ms-transition: ease-in 0.5s;
+  -moz-transition: ease-in 0.5s;
+  -o-transition: ease-in 0.5s;
+  transition: ease-in 0.5s;
+  text-align: center;
+}
+#maincontainer #categoryContainer .category .content .logo:hover {
+  width: 65%;
+  height: 90%;
+}
+#maincontainer #categoryContainer .category .content .logo a {
+  outline: 0;
+}
+#maincontainer #categoryContainer .category .content .logo a img {
+  display: inline;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-position: center;
+  background-origin: no-repeat;
+}
+#maincontainer #categoryContainer .category .content .info {
+  margin-top: 30px;
+}
+#maincontainer #categoryContainer .category .content .info .title h2 {
+  text-align: center;
+  font-family: "Roboto Slab" , georgia , serif;
+}
+#maincontainer #categoryContainer .category .content .info .about {
+  margin-top: 20px;
+}
+#maincontainer #categoryContainer .category .content .info .about p {
+  text-align: center;
+}
+#maincontainer #categoryContainer #lagocategory {
+  padding-top: 100px;
+}
+
+/*# sourceMappingURL=categorystyle.css.map */

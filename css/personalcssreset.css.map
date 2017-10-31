@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAQ,6DAAqD;AACrD,kEAA0D;AAGlE,2BAA2B;AAK3B,CAAE;EACD,UAAU,EAAE,UAAU;EACtB,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;;;AAGV;;aAEe;EACd,UAAU,EAAE,UAAU;EACtB,gBAAgB,EAdA,OAAO;EAevB,KAAK,EAAC,OAAO;EACb,WAAW,EAAE,wCAAwC;EACrD,gBAAgB,EAAE,IAAI",
+"sources": ["../scss/personalcssreset.scss"],
+"names": [],
+"file": "personalcssreset.css"
+}
