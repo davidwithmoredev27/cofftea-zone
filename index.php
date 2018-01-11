@@ -8,14 +8,44 @@
 	<?php require "template/scriptsandstylesheet.php"; ?>
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/lagocafeStyle.css">
+	<style type="text/css">
+		#loadimages {
+			-moz-transition: all linear 2s;
+			-webkit-transition: all linear 2s;
+			-ms-transition: all linear 2s;
+			-o-transition: all linear 2s;
+			transition:all linear 2s;
+		}
+	</style>
+	<script type="text/javascript">
+		// load this image before it can clicked
+		window.onload = function () {
+			var loadImages = document.getElementById("loadimages");
+			var images = [
+				"url('4th banner.jpg')",
+				"url('_MG_3565.JPG')",
+				"url('5th banner.jpg ')",
+				"url('martinas venue.JPG')",
+				"url('ktv venue.JPG')",
+			];
+			// load the image in cache before it will clicked
+			for (var ii = 0 ; ii < images.length ;ii++) {
+				loadImages.style.backgroundImage = images[ii];
+			}
+		}
+	</script>
 </head>
 <body>
+
+	<div id="loadimages" style="display:none">
+	</div>
 	<div id="overlay" style="display: none;">
 			<div id="overlaybuttoncontainer">
 				<div id="overlaybutton">
 					<img src="img/buttons/ex.png" alt="">
 				</div>
 			</div>
+			
 			<div class="overlayimg">
 				<img src="" width="100%" height="100%" id="imgoverlay">
 			</div>
@@ -79,9 +109,52 @@
 			<nav id="navbar">
 				<ul>
 					<li><a href="index.php">Home</a></li>
-					<li><a href="coffteamenu.php">Our Menu</a></li>
+					<li><a href="coffteamenu.php">Our Menu</a>
+						<div id="megadropdownmenu">
+							<nav class="categorymenus">
+								<div class="categorydropdowntitle">
+									<h3>Drinks</h3>
+								</div>
+								<ul>
+									<li><a href="">Signature Drinks</a></li>
+									<li><a href="">Italian Soda</a></li>
+									<li><a href="">Fruit Tea</a></li>
+									<li><a href="">Hot Drinks</a></li>
+									<li><a href="">Iced Coffee</a></li>
+									<li><a href="">Frappucino</a></li>
+									<li><a href="">Yakult Drinks</a></li>
+									<li><a href="">Milk Tea</a></li>
+									<li><a href="">Smoothies</a></li>
+									<li><a href="">CockTails</a></li>
+								</ul>
+							</nav>
+							<nav class="categorymenus">
+								<div class="categorydropdowntitle">
+									<h3>Food</h3>
+								</div>
+								<ul>
+									<li><a href="menu/starter.php">Starter</a></li>
+									<li><a href="">Burger and Sandwiches</a></li>
+									<li><a href="">Pizza</a></li>
+									<li><a href="">Soup</a></li>
+									<li><a href="">Main Course</a></li>
+									<li><a href="">Group Meals</a></li>
+									<li><a href="">Platter</a></li>
+									<li><a href="">Pasta</a></li>
+								</ul>
+							</nav>
+							<nav class="categorymenus">
+								<div class="categorydropdowntitle">
+									<h3>Pastries</h3>
+								</div>
+								<ul>
+									<li><a href="">Dessert</a></li>
+								</ul>
+							</nav>
+						</div>
+					</li>
 					<li><a href="services.php">Services</a></li>
-					<li><a href="facilities.php">Facilities</a></li>
+				
 					<li><a href="gallery.php">Gallery</a></li>
 					<li><a href="aboutus.php">About Us</a></li>
 					<li><a href="contactus.php">Contact Us</a></li>
@@ -127,7 +200,7 @@
 			
 		</section> -->
 		<section id="maincontainer">
-				<div id="featuredandnewproductcontainer">
+			<div id="featuredandnewproductcontainer">
 				<div class="newproduct">
 					<div class="newandfeattitle">
 						<h3>Our New Product</h3>
@@ -139,22 +212,24 @@
 					</div>
 
 				</div>
-				<div class="featuredproduct">
-					<div class="newandfeattitle">
-						<h3>Our Promos</h3>
+				<div id="scrolldownfeatured">
+					<div class="featuredproduct">
+						<div class="newandfeattitle">
+							<h3>Our Promos</h3>
+						</div>
+						<div class="newprodandfeatureimg">
+							<figure>
+								<img src="1st banner.jpg" alt="">
+							</figure>
+						</div>			
 					</div>
-					<div class="newprodandfeatureimg">
-						<figure>
-							<img src="1st banner.jpg" alt="">
-						</figure>
-					</div>			
-				</div>
-				<div class="featuredproduct" style="">
-					<div class="newprodandfeatureimg">
-						<figure>
-							<img src="2nd banner.jpg" alt="">
-						</figure>
-					</div>			
+					<div class="featuredproduct" style="">
+						<div class="newprodandfeatureimg">
+							<figure>
+								<img src="2nd banner.jpg" alt="">
+							</figure>
+						</div>			
+					</div>
 				</div>
 			</div>
 			<section id="bestsellercontainer">
@@ -195,7 +270,7 @@
 				</div> -->
 				<div class="bestsellerdevider">
 					<div class="bestsellertitle" id="coffteasellertitle">
-						<h3>Cofftea Best Seller</h3>
+						<h3>Our Best Seller</h3>
 					</div>
 					<div class="seller firtseller sellerclick">
 						<figure>
@@ -219,7 +294,7 @@
 					</div>
 					<div class="seller sellerclick">
 						<figure >
-							<img src="img/menus/itallian soda/green apple.jpg" alt="">
+							<img src="img/bestseller/cofftea/green apple soda.jpg" alt="">
 						</figure>
 					</div>
 					<div class="seller sellerclick">
@@ -256,7 +331,7 @@
 			<div id="footerinfoscontent">
 				<div class="footerdinfodevider">
 					<div class="footericon">
-						<img src="" alt="">
+						<img src="img/social-facebook-circular-button.svg" width="100%" height="100%" alt="">
 					</div>
 					<div class="footertitle">
 						<h3>Cofftea Zone</h3>

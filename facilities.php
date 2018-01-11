@@ -37,98 +37,70 @@
 			</div>
 		</section> -->
 		<section id="facilitiescontainer">
-			<div class="facilitiesdivider">
-				<div class="containers marginLeft" id="coffteacontainer">
-					<div class="moreinfo"><a href="#">Show More</a></div>
+			<div class="facilitiesdevider">
+				<div id="coffteafacility">
+					<div class="show">Show More Photos</div>
+				</div>
+				<div class="facilitiestitle">
+					<h3>Cofftea</h3>
 				</div>
 			</div>
-			<div class="facilitiesdivider">
-				<div class="containers marginLeft" id="martinascontainer" style="margin-left: 37px; margin-top: 10px;">
-					<div class="moreinfo"><a href="#">Show More</a></div>
+			<div class="facilitiesdevider">
+				<div id="martinasfacility" class="seperator">
+					<div class="show">Show More Photos</div>
 				</div>
-				<div class="containers" id="ktvcontainer" style="margin-top:10px;">
-					<div class="moreinfo"><a href="#">Show More</a></div>
+				<div id="ktvfacility" class="seperator">
+					<div class="show">Show More Photos</div>
+				</div>
+				<div class="martinasandktvtitle">
+					<h3>Martinas</h3>
+				</div>
+				<div class="martinasandktvtitle">
+					<h3>KTV Bar</h3>
 				</div>
 			</div>
 		</section>
 		<footer id="footercontainer">
-			<div class="footercontent">
-				<div class="aboutinfocontainer">
-					<p id="companyname"><span>Lago Cafe</span></p>
-					<p id="location"><span>851 Manila Cavite Road, Dalahican Cavite City,<br>Philippines.</span></p>
-					<div id="phonenumber">
-						<p>Contact Numbers:</p>
-						<span>Lago: 09054521702</span><br>
-						<span>Cofftea: 09177049806</span>
+			<div id="footerinfoscontent">
+				<div class="footerdinfodevider">
+					<div class="footericon">
+						<img src="" alt="">
 					</div>
-					<div id="email">
-						<p>email: <span>LagoCafe2017@gmail.com</span></p>
+					<div class="footertitle">
+						<h3>Cofftea Zone</h3>
 					</div>
-				</div>
-				<div class="footernavbar">
-					<nav class="links">
-						<ul>
-							<li><a href="aboutus.php">About Us</a></li>
-							<li><a href="coffteamenu.php">Cofftea Menu</a></li>
-							<li><a href="lagomenu.php">Lago Menu</a></li>
-							<li><a href="services.php">Services</a></li>
-							<li><a href="facilities.php">Facilities</a></li>
-							<li><a href="gallery.php">Gallery</a></li>
-							<li><a href="contactus.php">Contact Us</a></li>
-						</ul>
-					</nav>
-					<div class="findus">
-						<h3>Find Us</h3>
-						<a href="#">Facebook</a>
+					<div class="footeraddress">
+						<p>851 Manila Cavite Road, Dalahican Cavite City Philippines</p>
 					</div>
 				</div>
-				<!-- <div class="hours">
-					<div class="hoursdevider">
-						<div class="hourscontainer">
-							<div class="hourstitle">
-								<h3>COFFTEA HOURS</h3>
-							</div>
-							<div class="hoursched">
-								<h4>Monday to Sunday</h4>
-								<p>11:00 AM to 12:00 AM</p>
-							</div>
-						</div>
-						<div class="hourscontainer">
-							<div class="hourstitle">
-								<h3>LAGO HOURS</h3>
-							</div>
-							<div class="hoursched">
-								<h4>Monday to Sunday</h4>
-								<p>4:00 PM to 2:00 AM</p>
-								<h5>Bands</h5>
-								<p>9:00 PM to 1:00 AM</p>
-							</div>
-						</div>
+				<div class="footerdinfodevider">
+					<div class="footericon">
+						<img src="" alt="">
 					</div>
-					<div class="hoursdevider">
-						<div class="hourscontainer" style="padding-top: 10px;">
-							<div class="hourstitle">
-								<h3>MARTINAS HOURS</h3>
-							</div>
-							<div class="hoursched">
-								<h4>Monday to Sunday</h4>
-								<p>12:00 Noon to 11:00 PM</p>
-							</div>
-						</div>
-						<div class="hourscontainer" style="padding-top: 10px;">
-							<div class="hourstitle">
-								<h3>KTV BAR HOURS</h3>
-							</div>
-							<div class="hoursched">
-								<h4>Monday to Sunday</h4>
-								<p>2:00 PM to 2:00 AM</p>
-							</div>
-						</div>
+					<div class="footertitle">
+						<h3>Contact Number</h3>
 					</div>
-				</div> -->
+					<div class="contact">
+						<p><strong>Mobile:</strong> 09177049806</p>
+						<p><strong>Telephone:</strong> 418-31-56</p>
+					</div>
+				</div>
+				<div class="footerdinfodevider">
+					<div class="footericon">
+						<img src="" alt="">
+					</div>
+					<div class="footertitle">
+						<h3>Follow Us:</h3>
+					</div>
+					<div class="followicons">
+						<a href="#"><img src="" alt=""></a>
+						<a href="#"><img src="" alt=""></a>
+						<a href="#"><img src="" alt=""></a>
+					</div>
+				</div>
 			</div>
 			<div id="copyrightcontainer">
-				<p>&copy; Cofftea Zone &amp; Lago De Dalahican 2017</p>
+				<p>&copy; Cofftea Zone 2017</p>
 			</div>
 		</footer>
 	</div>

@@ -6,7 +6,7 @@
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
 	<title>Our Menu</title>
 	<?php require "template/scriptsandstylesheet.php"; ?>
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="css/lagocafeStyle.css">
 	<style>
 		.descriptiontxt {
@@ -23,9 +23,51 @@
 			<nav id="navbar">
 				<ul>
 					<li><a href="index.php">Home</a></li>
-					<li><a href="coffteamenu.php">Our Menu</a></li>
+					<li><a href="coffteamenu.php">Our Menu</a>
+						<div id="megadropdownmenu">
+							<nav class="categorymenus">
+								<div class="categorydropdowntitle">
+									<h3>Drinks</h3>
+								</div>
+								<ul>
+									<li><a href="">Signature Drinks</a></li>
+									<li><a href="">Italian Soda</a></li>
+									<li><a href="">Fruit Tea</a></li>
+									<li><a href="">Hot Drinks</a></li>
+									<li><a href="">Iced Coffee</a></li>
+									<li><a href="">Frappucino</a></li>
+									<li><a href="">Yakult Drinks</a></li>
+									<li><a href="">Milk Tea</a></li>
+									<li><a href="">Smoothies</a></li>
+									<li><a href="">CockTails</a></li>
+								</ul>
+							</nav>
+							<nav class="categorymenus">
+								<div class="categorydropdowntitle">
+									<h3>Food</h3>
+								</div>
+								<ul>
+									<li><a href="menu/starter.php">Starter</a></li>
+									<li><a href="">Burger and Sandwiches</a></li>
+									<li><a href="">Pizza</a></li>
+									<li><a href="">Soup</a></li>
+									<li><a href="">Main Course</a></li>
+									<li><a href="">Group Meals</a></li>
+									<li><a href="">Platter</a></li>
+									<li><a href="">Pasta</a></li>
+								</ul>
+							</nav>
+							<nav class="categorymenus">
+								<div class="categorydropdowntitle">
+									<h3>Pastries</h3>
+								</div>
+								<ul>
+									<li><a href="">Dessert</a></li>
+								</ul>
+							</nav>
+						</div>
+					</li>
 					<li><a href="services.php">Services</a></li>
-					<li><a href="facilities.php">Facilities</a></li>
 					<li><a href="gallery.php">Gallery</a></li>
 					<li><a href="aboutus.php">About Us</a></li>
 					<li><a href="contactus.php">Contact Us</a></li>
@@ -33,12 +75,7 @@
 			</nav> <!-- end of navbar-->
 		</header> <!-- end of header-->
 		<section id="menucontainer">
-			<div class="menucategory">
-				<div class="category"><a href="#food">food</a></div>
-				<div class="category"><a href="#beverage">speciality beverage</a></div>
-				<div class="category"><a href="#pastries">pastries</a></div>
-			</div>
-			<div class="menudevider" id="coffteamenus">
+			<!-- <div class="menudevider" id="coffteamenus">
 				<div class="dishtitle">
 					<h3><a name="food">Food</a></h3>
 				</div>
@@ -243,11 +280,11 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			
 			<!-- Drinks -->
 	
-			<div class="menudevider" id="coffteamenus">
+			<!-- <div class="menudevider" id="coffteamenus">
 				<div class="dishtitle">
 					<h3><a name="beverage">Speciality Beverage</a></h3>
 				</div>
@@ -426,12 +463,12 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 
 			<!-- Dessert-->
 
-			<div class="menudevider" id="coffteamenus">
+			<!--<div class="menudevider" id="coffteamenus">
 				<div class="dishtitle">
 					<h3><a name="pastries">Pastries</a></h3>
 				</div>
@@ -482,116 +519,173 @@
 						</div>
 					</div>
 				</div>
+			</div>-->
+
+
+			<div class="menudeviders">
+				<div class="menutitle">
+					<h3><span>Food</span></h3>	
+				</div>
+				<div class="menucategory">
+					<div class="dishtitle">
+						<h4><span>Starter</span></h4>
+					</div>
+					<div class="dishcatcontainer">
+						<div class="dishcat">
+							
+						</div>
+					</div>
+				</div>
+				<div class="menucategory">
+					<div class="dishtitle">
+						<h4><span>Burger's &amp; Sandwiches</span></h4>
+					</div>
+				</div>
+				<div class="menucategory">
+					<div class="dishtitle">
+						<h4><span>Pizza</span></h4>
+					</div>
+				</div>
+				<div class="menucategory">
+					<div class="dishtitle">
+						<h4><span>Soup</span></h4>
+					</div>
+				</div>
+				<div class="menucategory">
+					<div class="dishtitle">
+						<h4><span>Main Course</span></h4>
+					</div>
+				</div>
+				<div class="menucategory">
+					<div class="dishtitle">
+						<h4><span>Platter</span></h4>
+					</div>
+				</div>
+				<div class="menucategory">
+					<div class="dishtitle">
+						<h4><span>Pasta</span></h4>
+					</div>
+				</div>
+			</div>
+			<div class="menudeviders">
+				<div class="menutitle">
+					<h3><span>Drinks</span></h3>
+				</div>
+				<div class="menucategory">
+					<div class="dishtitle">
+						<h4><span>Hot Drinks</span></h4>
+					</div>
+				</div>
+				<div class="menucategory">
+					<div class="dishtitle">
+						<h4><span>Iced Coffee</span></h4>
+					</div>
+				</div>
+				<div class="menucategory">
+					<div class="dishtitle">
+						<h4><span>Frapuccino</span></h4>
+					</div>
+				</div>
+				<div class="menucategory">
+					<div class="dishtitle">
+						<h4><span>Signature Drinks</span></h4>
+					</div>
+				</div>
+				<div class="menucategory">
+					<div class="dishtitle">
+						<h4><span>Italian Soda</span></h4>
+					</div>
+				</div>
+				<div class="menucategory">
+					<div class="dishtitle">
+						<h4><span>Fruit Tea</span></h4>
+					</div>
+				</div>
+				<div class="menucategory">
+					<div class="dishtitle">
+						<h4><span>Yakult Drinks</span></h4>
+					</div>
+				</div>
+				<div class="menucategory">
+					<div class="dishtitle">
+						<h4><span>Milk Tea</span></h4>
+					</div>
+				</div>
+				<div class="menucategory">
+					<div class="dishtitle">
+						<h4><span>Smoothies</span></h4>
+					</div>
+				</div>
+				<div class="menucategory">
+					<div class="dishtitle">
+						<h4><span>CockTails</span></h4>
+					</div>
+				</div>
+			</div>
+			<div class="menudeviders">
+				<div class="menutitle">
+					<h3><span>Desserts</span></h3>
+				</div>
+				<div class="menucategory">
+				
+				</div>
 			</div>
 		</section>
 		<footer id="footercontainer">
-			<div class="footercontent">
-				<div class="aboutinfocontainer">
-					<p id="companyname"><span>Lago Cafe</span></p>
-					<p id="location"><span>851 Manila Cavite Road, Dalahican Cavite City,<br>Philippines.</span></p>
-					<div id="phonenumber">
-						<p>Contact Numbers:</p>
-						<span>Lago: 09054521702</span><br>
-						<span>Cofftea: 09177049806</span>
+			<div id="footerinfoscontent">
+				<div class="footerdinfodevider">
+					<div class="footericon">
+						<img src="" alt="">
 					</div>
-					<div id="email">
-						<p>email: <span>LagoCafe.2017@gmail.com</span></p>
+					<div class="footertitle">
+						<h3>Cofftea Zone</h3>
 					</div>
-				</div>
-				<div class="footernavbar">
-					<nav class="links">
-						<ul>
-							<li><a href="aboutus.php">About Us</a></li>
-							<li><a href="coffteamenu.php">Cofftea Menu</a></li>
-							<li><a href="lagomenu.php">Lago Menu</a></li>
-							<li><a href="services.php">Services</a></li>
-							<li><a href="facilities.php">Facilities</a></li>
-							<li><a href="gallery.php">Gallery</a></li>
-							<li><a href="contactus.php">Contact Us</a></li>
-						</ul>
-					</nav>
-					<div class="findus">
-						<h3>Find Us</h3>
-						<a href="#">Facebook</a>
+					<div class="footeraddress">
+						<p>851 Manila Cavite Road, Dalahican Cavite City Philippines</p>
 					</div>
 				</div>
-				<!-- <div class="hours">
-					<div class="hoursdevider">
-						<div class="hourscontainer">
-							<div class="hourstitle">
-								<h3>COFFTEA HOURS</h3>
-							</div>
-							<div class="hoursched">
-								<h4>Monday to Sunday</h4>
-								<p>11:00 AM to 12:00 AM</p>
-							</div>
-						</div>
-						<div class="hourscontainer">
-							<div class="hourstitle">
-								<h3>LAGO HOURS</h3>
-							</div>
-							<div class="hoursched">
-								<h4>Monday to Sunday</h4>
-								<p>4:00 PM to 2:00 AM</p>
-								<h5>Bands</h5>
-								<p>9:00 PM to 1:00 AM</p>
-							</div>
-						</div>
+				<div class="footerdinfodevider">
+					<div class="footericon">
+						<img src="" alt="">
 					</div>
-					<div class="hoursdevider">
-						<div class="hourscontainer" style="padding-top: 10px;">
-							<div class="hourstitle">
-								<h3>MARTINAS HOURS</h3>
-							</div>
-							<div class="hoursched">
-								<h4>Monday to Sunday</h4>
-								<p>12:00 Noon to 11:00 PM</p>
-							</div>
-						</div>
-						<div class="hourscontainer" style="padding-top: 10px;">
-							<div class="hourstitle">
-								<h3>KTV BAR HOURS</h3>
-							</div>
-							<div class="hoursched">
-								<h4>Monday to Sunday</h4>
-								<p>2:00 PM to 2:00 AM</p>
-							</div>
-						</div>
+					<div class="footertitle">
+						<h3>Contact Number</h3>
 					</div>
-				</div> -->
+					<div class="contact">
+						<p><strong>Mobile:</strong> 09177049806</p>
+						<p><strong>Telephone:</strong> 418-31-56</p>
+					</div>
+				</div>
+				<div class="footerdinfodevider">
+					<div class="footericon">
+						<img src="" alt="">
+					</div>
+					<div class="footertitle">
+						<h3>Follow Us:</h3>
+					</div>
+					<div class="followicons">
+						<a href="#"><img src="" alt=""></a>
+						<a href="#"><img src="" alt=""></a>
+						<a href="#"><img src="" alt=""></a>
+					</div>
+				</div>
 			</div>
 			<div id="copyrightcontainer">
-				<p>&copy; Cofftea Zone &amp; Lago De Dalahican 2017</p>
+				<p>&copy; Cofftea Zone 2017</p>
 			</div>
 		</footer>
 	</div>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script>
 	<script type="text/javascript">
-		
-		/*var dishtxthover = document.getElementsByClassName("menutexthover");
-		var descriptiontxt = document.getElementsByClassName("descriptiontxt");
-
-		var showDescription = function () {
-			var showIndex = this;
-			descriptiontxt[showIndex].style.display = "inline";
-			
-			for (var finder = 0 ; i < dishtxthover.length ; finder++) {
-				
-			}
-
-		};
-		var hideDescription = function () {
-			var hideIndex = this.length;
-			descriptiontxt[hideIndex].style.display = "none";
-		};
-
-
-		for (var i = 0 ; i < dishtxthover.length ; i++) {
-			dishtxthover[i].addEventListener('mouseover' , showDescription , false);
-		} 
-
-		for(var ii = 0 ; ii < dishtxthover.length ; ii++) {
-			dishtxthover[ii].addEventListener('mouseout' , hideDescription , false);
-		}*/
+		$(document).ready(function() {
+			$(".dishcat").slick({
+				infinite: true ,
+				slideToShow : 13,
+				slidetoScroll :
+			})
+		});
 	</script>
 </body>
 </html>

@@ -20,7 +20,6 @@
 					<li><a href="coffteamenu.php">Cofftea Menu</a></li>
 					<li><a href="lagomenu.php">Lago Menu</a></li>
 					<li><a href="foodservices.php">Services</a></li>
-					<li><a href="facilities.php">Facilities</a></li>
 					<li><a href="gallery.php">Gallery</a></li>
 					<li><a href="contactus.php">Contact Us</a></li>
 				</ul>	

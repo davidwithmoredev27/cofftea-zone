@@ -17,12 +17,54 @@
 			</section>
 			<nav id="navbar">
 				<ul>
-					<li><a href="index.php">Home</a></li>
-					<li><a href="aboutus.php">About Us</a></li>
-					<li><a href="coffteamenu.php">Our Menu</a></li>
+				<li><a href="index.php">Home</a></li>
+					<li><a href="coffteamenu.php">Our Menu</a>
+						<div id="megadropdownmenu">
+							<nav class="categorymenus">
+								<div class="categorydropdowntitle">
+									<h3>Drinks</h3>
+								</div>
+								<ul>
+									<li><a href="">Signature Drinks</a></li>
+									<li><a href="">Italian Soda</a></li>
+									<li><a href="">Fruit Tea</a></li>
+									<li><a href="">Hot Drinks</a></li>
+									<li><a href="">Iced Coffee</a></li>
+									<li><a href="">Frappucino</a></li>
+									<li><a href="">Yakult Drinks</a></li>
+									<li><a href="">Milk Tea</a></li>
+									<li><a href="">Smoothies</a></li>
+									<li><a href="">CockTails</a></li>
+								</ul>
+							</nav>
+							<nav class="categorymenus">
+								<div class="categorydropdowntitle">
+									<h3>Food</h3>
+								</div>
+								<ul>
+									<li><a href="menu/starter.php">Starter</a></li>
+									<li><a href="">Burger and Sandwiches</a></li>
+									<li><a href="">Pizza</a></li>
+									<li><a href="">Soup</a></li>
+									<li><a href="">Main Course</a></li>
+									<li><a href="">Group Meals</a></li>
+									<li><a href="">Platter</a></li>
+									<li><a href="">Pasta</a></li>
+								</ul>
+							</nav>
+							<nav class="categorymenus">
+								<div class="categorydropdowntitle">
+									<h3>Pastries</h3>
+								</div>
+								<ul>
+									<li><a href="">Dessert</a></li>
+								</ul>
+							</nav>
+						</div>
+					</li>
 					<li><a href="services.php">Services</a></li>
-					<li><a href="facilities.php">Facilities</a></li>
 					<li><a href="gallery.php">Gallery</a></li>
+					<li><a href="aboutus.php">About Us</a></li>
 					<li><a href="contactus.php">Contact Us</a></li>
 				</ul>	
 			</nav> <!-- end of navbar-->
@@ -34,102 +76,131 @@
 		</section> -->
 		<section id="gallerycontainer">
 			<div class="gallerydevider">
-				<div class="gallerycatalog" id="galleryparty">
-					<div class="captiongallery"><p>Parties</p></div>
-					<div class="moreimg"><a href="gallerypages/">See more</a></div>
+				<div class="gallerytitle">
+					<h3>Product images</h3>
+				</div>
+				<div class="imgcollecandlarimgcontainer">
+					<div class="imgcollection">
+						<div id="productcollection">
+							<div class="collectiondevider">
+								<figure class="producthighlight"><img  class="imageproduct" src="img/menus/Burgers and Sandwiches/chicken sandwhich.jpg" alt=""></figure>
+								<figure class="producthighlight"><img class="imageproduct" src="img/menus/Burgers and Sandwiches/cheese burger.jpg" alt=""></figure>
+								<figure class="producthighlight"><img class="imageproduct" src="img/menus/pizza/all meat lovers.jpg" alt=""></figure>
+								<figure class="producthighlight"><img class="imageproduct" src="img/menus/main course/tocilog.jpg" alt=""></figure>
+							</div>
+							<div class="collectiondevider">
+								<figure class="producthighlight"><img class="imageproduct" src="img/menus/main course/noksilog.jpg" alt=""></figure>
+								<figure class="producthighlight"><img class="imageproduct" src="img/menus/Hot Drinks/cafe latte.jpg" alt=""></figure>
+								<figure class="producthighlight"><img class="imageproduct" src="img/menus/Hot Drinks/cappuccino.jpg" alt=""></figure>
+								<figure class="producthighlight"><img class="imageproduct" src="img/menus/Hot Drinks/Cafe_Mocha.jpg" alt=""></figure>
+							</div>
+							<div class="collectiondevider">
+								<figure class="producthighlight"><img class="imageproduct" src="img/dishes/cofftea/dessert/20171022_154948.jpg" alt=""></figure>
+								<figure class="producthighlight"><img class="imageproduct" src="img/dishes/cofftea/dessert/20171022_155055.jpg" alt=""></figure>
+								<figure class="producthighlight"><img class="imageproduct" src="img/dishes/cofftea/dessert/_MG_3736.JPG" alt=""></figure>
+								<figure class="producthighlight"><img class="imageproduct" src="img/dishes/cofftea/dessert/_MG_3739.JPG" alt=""></figure>
+							</div>
+						</div>
+					</div>
+					<div class="largeimg">
+						<div class="imgzoom">
+							<div id="imgzoomproduct">
+								<img src="" alt="" id="productsZoom">
+							</div>
+						</div>
+						<div class="zoomarrow">
+							<div class="arrow" id="leftarrowproduct"><--</div>
+							<div class="arrow" id="rightarrowproduct">--></div>
+						</div>
+					</div>
 				</div>
 			</div>
+			
 			<div class="gallerydevider">
-				<div class="gallerycatalog" id="galleryproducts">
-					<div class="captiongallery"><p>Products</p></div>
-					<div class="moreimg"><a href="">See more</a></div>
+				<div class="gallerytitle">
+					<h3>Customer Experience</h3>
 				</div>
-				<div class="gallerycatalog" id="Customer Exp.">
-					<div class="captiongallery"><p>Customer experience</p></div>
-					<div class="moreimg"><a href="">See more</a></div>
+				<div class="imgcollecandlarimgcontainer">
+					<div class="imgcollection">
+						<div id="customercollection">
+							<div class="collectiondevider">
+								<figure><img src="img/gallery/customerexp/imagesone.jpg" alt=""></figure>
+								<figure><img src="img/gallery/customerexp/imagestwo.jpg" alt=""></figure>
+								<figure><img src="img/gallery/customerexp/imagethree.jpg" alt=""></figure>
+								<figure><img src="img/gallery/customerexp/imagefour.jpg" alt=""></figure>
+							</div>
+							<div class="collectiondevider">
+								<figure><img src="img/gallery/customerexp/imagefive.jpg" alt=""></figure>
+								<figure><img src="img/gallery/customerexp/imagesix.JPG" alt=""></figure>
+								<figure><img src="img/gallery/customerexp/imageseven.jpg" alt=""></figure>
+								<figure><img src="img/gallery/customerexp/imageeigth.JPG" alt=""></figure>
+							</div>
+							<div class="collectiondevider">
+								<figure><img src="" alt=""></figure>
+								<figure><img src="" alt=""></figure>
+								<figure><img src="" alt=""></figure>
+								<figure><img src="" alt=""></figure>
+							</div>
+						</div>
+					</div>
+					<div class="largeimg">
+						<div class="imgzoom">
+							<div id="imgzoomcustomer">
+								<img src="" alt="">
+							</div>
+						</div>
+						<div class="zoomarrow">
+							<div class="arrow" id="leftarrowcustomer"><--</div>
+							<div class="arrow" id="rightarrowcutomer">--></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 		<footer id="footercontainer">
-			<div class="footercontent">
-				<div class="aboutinfocontainer">
-					<p id="companyname"><span>Lago Cafe</span></p>
-					<p id="location"><span>851 Manila Cavite Road, Dalahican Cavite City,<br>Philippines.</span></p>
-					<div id="phonenumber">
-						<p>Contact Numbers:</p>
-						<span>Lago: 09054521702</span><br>
-						<span>Cofftea: 09177049806</span>
+			<div id="footerinfoscontent">
+				<div class="footerdinfodevider">
+					<div class="footericon">
+						<img src="" alt="">
 					</div>
-					<div id="email">
-						<p>email: <span>LagoCafe2017@gmail.com</span></p>
+					<div class="footertitle">
+						<h3>Cofftea Zone</h3>
 					</div>
-				</div>
-				<div class="footernavbar">
-					<nav class="links">
-						<ul>
-							<li><a href="aboutus.php">About Us</a></li>
-							<li><a href="coffteamenu.php">Cofftea Menu</a></li>
-							<li><a href="lagomenu.php">Lago Menu</a></li>
-							<li><a href="services.php">Services</a></li>
-							<li><a href="facilities.php">Facilities</a></li>
-							<li><a href="gallery.php">Gallery</a></li>
-							<li><a href="contactus.php">Contact Us</a></li>
-						</ul>
-					</nav>
-					<div class="findus">
-						<h3>Find Us</h3>
-						<a href="#">Facebook</a>
+					<div class="footeraddress">
+						<p>851 Manila Cavite Road, Dalahican Cavite City Philippines</p>
 					</div>
 				</div>
-				<div class="hours">
-					<div class="hoursdevider">
-						<div class="hourscontainer">
-							<div class="hourstitle">
-								<h3>COFFTEA HOURS</h3>
-							</div>
-							<div class="hoursched">
-								<h4>Monday to Sunday</h4>
-								<p>12:00 Noon to 11:00 PM</p>
-							</div>
-						</div>
-						<div class="hourscontainer">
-							<div class="hourstitle">
-								<h3>LAGO HOURS</h3>
-							</div>
-							<div class="hoursched">
-								<h4>Monday to Sunday</h4>
-								<p>2:00 PM to 2:00 AM</p>
-							</div>
-						</div>
+				<div class="footerdinfodevider">
+					<div class="footericon">
+						<img src="" alt="">
 					</div>
-					<div class="hoursdevider">
-						<div class="hourscontainer">
-							<div class="hourstitle">
-								<h3>MARTINAS HOURS</h3>
-							</div>
-							<div class="hoursched">
-								<h4>Monday to Sunday</h4>
-								<p>12:00 Noon to 11:00 PM</p>
-							</div>
-						</div>
-						<div class="hourscontainer">
-							<div class="hourstitle">
-								<h3>KTV BAR HOURS</h3>
-							</div>
-							<div class="hoursched">
-								<h4>Monday to Sunday</h4>
-								<p>2:00 PM to 2:00 AM</p>
-							</div>
-						</div>
+					<div class="footertitle">
+						<h3>Contact Number</h3>
+					</div>
+					<div class="contact">
+						<p><strong>Mobile:</strong> 09177049806</p>
+						<p><strong>Telephone:</strong> 418-31-56</p>
+					</div>
+				</div>
+				<div class="footerdinfodevider">
+					<div class="footericon">
+						<img src="" alt="">
+					</div>
+					<div class="footertitle">
+						<h3>Follow Us:</h3>
+					</div>
+					<div class="followicons">
+						<a href="#"><img src="" alt=""></a>
+						<a href="#"><img src="" alt=""></a>
+						<a href="#"><img src="" alt=""></a>
 					</div>
 				</div>
 			</div>
 			<div id="copyrightcontainer">
-				<p>&copy; Cofftea Zone &amp; Lago De Dalahican 2017</p>
+				<p>&copy; Cofftea Zone 2017</p>
 			</div>
-		</footer>
 	</div>
-	<script src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="js/galleryanimation.js"></script>
 	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js></script> -->
 </body>
 </html>

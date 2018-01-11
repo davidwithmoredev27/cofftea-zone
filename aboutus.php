@@ -18,9 +18,52 @@
 			<nav id="navbar">
 				<ul>
 					<li><a href="index.php">Home</a></li>
-					<li><a href="coffteamenu.php">Our Menu</a></li>
+					<li><a href="coffteamenu.php">Our Menu</a>
+					
+						<div id="megadropdownmenu">
+							<nav class="categorymenus">
+								<div class="categorydropdowntitle">
+									<h3>Drinks</h3>
+								</div>
+								<ul>
+									<li><a href="">Signature Drinks</a></li>
+									<li><a href="">Italian Soda</a></li>
+									<li><a href="">Fruit Tea</a></li>
+									<li><a href="">Hot Drinks</a></li>
+									<li><a href="">Iced Coffee</a></li>
+									<li><a href="">Frappucino</a></li>
+									<li><a href="">Yakult Drinks</a></li>
+									<li><a href="">Milk Tea</a></li>
+									<li><a href="">Smoothies</a></li>
+									<li><a href="">CockTails</a></li>
+								</ul>
+							</nav>
+							<nav class="categorymenus">
+								<div class="categorydropdowntitle">
+									<h3>Food</h3>
+								</div>
+								<ul>
+									<li><a href="menu/starter.php">Starter</a></li>
+									<li><a href="">Burger and Sandwiches</a></li>
+									<li><a href="">Pizza</a></li>
+									<li><a href="">Soup</a></li>
+									<li><a href="">Main Course</a></li>
+									<li><a href="">Group Meals</a></li>
+									<li><a href="">Platter</a></li>
+									<li><a href="">Pasta</a></li>
+								</ul>
+							</nav>
+							<nav class="categorymenus">
+								<div class="categorydropdowntitle">
+									<h3>Pastries</h3>
+								</div>
+								<ul>
+									<li><a href="">Dessert</a></li>
+								</ul>
+							</nav>
+						</div>
+					</li>
 					<li><a href="services.php">Services</a></li>
-					<li><a href="facilities.php">Facilities</a></li>
 					<li><a href="gallery.php">Gallery</a></li>
 					<li><a href="aboutus.php">About Us</a></li>
 					<li><a href="contactus.php">Contact Us</a></li>
@@ -43,7 +86,7 @@
 							<h3>Cofftea Zone</h3>
 						</div>
 						<div class="historydesc">
-							<p>Cofftea Zone Café Restaurant started in year 2012. Cofftea was the product of Ms. Pospones’ thesis as a Bachelor of Business Management student during college. Cofftea Zone Café Restaurant is determined to become a daily necessity for local coffee addicts, and place to dream of as you try to escape the daily stresses of life and just a comfortable place to meet your friends or to read book all in one. Cofftea Zone offers its customer’s best prepared beverages, such as coffee, tea, hot iced, and blended drinks, in the area that will be complemented with pastries, moderately priced good quality meals as well as the KTV and Martinas Events Party where patrons can enjoy their visit. It will serves as the client for the development of the website.</p>
+							<p>Cofftea Zone Cafe Restaurant started in year 2012. Cofftea was the product of Ms. Pospones’ thesis as a Bachelor of Business Management student during college. Cofftea Zone Cafe Restaurant is determined to become a daily necessity for local coffee addicts, and place to dream of as you try to escape the daily stresses of life and just a comfortable place to meet your friends or to read book all in one. Cofftea Zone offers its customer’s best prepared beverages, such as coffee, tea, hot iced, and blended drinks, in the area that will be complemented with pastries, moderately priced good quality meals as well as the KTV and Martinas Events Party where patrons can enjoy their visit. It will serves as the client for the development of the website.</p>
 						</div>
 					</div>
 				</div>

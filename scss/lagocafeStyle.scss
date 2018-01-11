@@ -1,5 +1,5 @@
 $backgroundColor:#FFFFF7; 
-$coffteaThemeColor:#483123;
+$coffteaThemeColor:#50080a;
 $coffteaNormalText:#5B4B27;
 $copyRightBg:#150e0a;
 $footercontentbg:#291a12;
@@ -157,6 +157,12 @@ a , a:visited  ,a:hover , a:focus , a:active {
 	-o-text-shadow:$propertyOne $propertyTwo $propertyThree $color;
 	text-shadow:$propertyOne $propertyTwo $propertyThree $color;
 }
+@mixin imageProperties ($imageUrl){
+	background-image:url($imageUrl);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+}
 html,body {
 	margin: 0;
 	padding: 0;
@@ -169,7 +175,11 @@ html,body {
 #container { 
 	width: 100%;
 	height: 100%;
-	background-color :$backgroundColor;
+	background-image :url("../img/pexels-photo-434252.jpeg");
+	background-attachment: fixed;
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 	font-family: Arial , helvetica ,sans-serif;
 	font-size: 1em;
 	header {
@@ -181,13 +191,15 @@ html,body {
 		#logocontainer {
 			float: left;
 			height: inherit;
+			position: relative;
+			z-index: 2;
 			padding-left:20px;
 			margin: 0;
 			background-color: /* $creamcan */ $coffteaThemeColor;
 			img {
-				position: absolute;
-				height: 110px;
-				width: 110px;
+				//position: absolute;
+				height: 98px;
+				width: 98px;
 			}
 		}
 		#navbar {
@@ -204,7 +216,7 @@ html,body {
 					background-color: /*$creamcan*/ $coffteaThemeColor;
 					height: inherit;
 					display: inline-block;
-					font-family: "roboto" , arial ,helvetica ,sans-serif;
+
 					float: left;
 					// border :1px solid black;
 					padding: 15px;
@@ -212,7 +224,7 @@ html,body {
 					a{
 						text-decoration: none;
 						color:whitesmoke;
-						
+						font-family: "Roboto Slab" ,georgia , serif;
 						text-transform: uppercase;
 						-webkit-transition: linear .2s;
 						-moz-transition: linear .2s;
@@ -393,11 +405,10 @@ html,body {
 		}
 	}
 	footer#footercontainer {
-		font-family: "roboto" , geneva, tahoma , Helvetica , Arial , sans-serif;
+		font-family: "Roboto Slab" , Georgia , serif;
 		box-shadow: 0px, 0px , 5px, #000;
 		padding: 0;
 		width: inherit;
-		font-family: "roboto" , arial , sans-serif;
 		height: 240px;
 		// border: 1px solid black;
 		background-color: whitesmoke;
@@ -405,29 +416,32 @@ html,body {
 		#footerinfoscontent {
 			height: 190px;
 			width: 100%;
-			color: #1a1a1a;
-			opacity: 0.5;
-			background-color: #f9e09e;
+			color: #aaa;
+			@include textShadow(0px , 0px , 5px ,#1a1a1a);
+			background-color: #840b0e;
 			@include textShadow(0px , 0px , 1px , #6a6a6a);
 			.footerdinfodevider {
 				height: inherit;
 				//border: 1px solid black;
 				width: 33.25%;
 				float: left;
+				padding-top: 30px;
 				.footericon {
-					width: 70px;
-					height: 70px;
+					width: 50px;
+					height: 60px;
 					margin: 0 auto;
 					border-bottom: 1px solid black;
+					
 				}
 				.footertitle {
 					width:100%;
-					margin-top: 20px;
+					margin-top: 0px;
 					text-align: center;
 					font-size: 1em;
 					h3 {
 						width: 100%;
 						height: 100%;
+						font-family: "Roboto Slab" , Georgia , serif;
 					}
 				}
 				.footeraddress {
@@ -435,20 +449,27 @@ html,body {
 					margin-top:20px; 
 					font-size: 1em;
 					text-align: center;
+					p{
+						font-family: "Roboto Slab" , Georgia , serif;
+					}
 				}
 				.contact {
 					margin-top:20px;
 					font-size: 1em;
 					text-align: center;
+
 					p {
 						width: 50%;
 						float: right;
+						font-family: "Roboto Slab" , Georgia , serif;
 					}
 				}
 				.followicons {
 					margin-top: 20px;
 					p {
-						font-size: 1em;
+						strong {
+							font-family: "Roboto Slab" , Georgia , serif;
+						}
 					}
 				}
 			}
@@ -457,8 +478,7 @@ html,body {
 			height: 50px;
 			width: inherit;
 			text-align: center;
-			opacity:0.8;
-			background-color: #522602;
+			background-color:#330204;
 			//@include textShadow(0px, 0px, 5px, #2a2a2a);
 			color:whitesmoke;
 			margin: 0;
@@ -488,6 +508,7 @@ html,body {
 			width: 100%;
 			font-size: 2em;
 			padding-left: 1em;
+			font-family: "Roboto Slab" , Georgia , serif;
 		}
 	}
 	.contactcontainer {
@@ -496,7 +517,7 @@ html,body {
 		width: 100%;
 		height: 700px;
 		//border: 1px solid black;
-		background-image: url("../img/pexels-photo-266046.jpeg");
+		background-image: url("../img/pexels-photo-434252.jpeg");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 100% 100%;
@@ -504,7 +525,7 @@ html,body {
 			width: 35%;
 			float: left;
 			border: 1px solid lightgray;
-			opacity: 0.8;
+			background-color: rgba(255 ,255 ,255 , 0.4);
 			clear: left;
 			padding: 30px;
 			margin-left: 9%;
@@ -516,6 +537,7 @@ html,body {
 				.fillupname {
 					margin-bottom: 10px;
 					margin-top: 10px;
+					font-family: "Roboto Slab" , Georgia , serif;
 					font-size: 1em;
 					font-weight: bold;
 					color:#000;
@@ -524,6 +546,7 @@ html,body {
 					padding:5px;
 					width: 100%;
 					@include transitionConfiguration(linear , .2s);
+					background-color: rgba(255 , 255 ,255 , 0.7);
 				}
 				input:focus {
 					@include boxShadow(0px , 0px , 2px , #000);
@@ -544,20 +567,42 @@ html,body {
 		#contactinfotxt {
 			float: right;
 			border: 1px solid black;
-			height: 500px;
+			height: 600px;
 			padding: 10px;
 			width: 35%;
 			margin-right: 10%;
-			opacity: 0.8;
-			padding-top: 60px;
+			background-color: rgba(255 ,255 ,255 ,0.4);
 			.infodivider {
-				height: 35%;
+				height: 20%;
 				width: 100%;
 				text-align: center;
 				line-height: 140%;
+				font-family: "Roboto Slab" , Georgia , serif;
 				.title {
 					text-align: center;
 					margin-bottom: 20px;
+					font-family: "Roboto Slab" , Georgia , serif;
+				}
+				p{
+					font-family: "Roboto Slab" , Georgia , serif;
+					span {
+						font-family: "Roboto Slab" , Georgia , serif;
+						background-color: rgba(255 ,255 ,255 ,0);
+					}
+				}
+				span {
+					font-family: "Roboto Slab" , Georgia , serif;
+					background-color: rgba(255 ,255 ,255 ,0);
+				}
+			}
+			.infodivider:nth-child(3) {
+				height: 18%;
+			}
+			.infodivider:last-child {
+				p:last-child {
+					margin-top: 40px;
+					font-weight: bold;
+					font-family: "Roboto Slab" , Georgia , serif;
 				}
 			}
 			
@@ -575,9 +620,10 @@ html,body {
 		width: 100%;
 		height: auto;
 		border: 1px solid black;
+		background-color:rgba(26 , 26 , 26 , 0.9);
 		.titleandesc {
 			height: 20%;
-			border-bottom:1px solid black;
+			//border-bottom:1px solid black;
 			div {
 				width: 100%;
 				text-align: center;
@@ -585,10 +631,16 @@ html,body {
 			.emailtitle {
 				font-size: 2em;
 				margin-top: 1.5em;
+				
+				h4 {
+					font-family: "Roboto Slab" , Georgia , serif;
+					color:whitesmoke;	
+				}
 			}
 			.emaildescription {
 				margin-top: .5em;
 				font-size: 1.5em;
+				p{font-family: "Roboto Slab" , Georgia , serif; color:whitesmoke;}
 			}
 		}
 		.updates{
@@ -612,6 +664,7 @@ html,body {
 				input[type="email"]:focus {
 					@include boxShadow(0px , 0px , 5px , gray);
 				}
+
 			}
 		}
 	}
@@ -640,12 +693,14 @@ html,body {
 	width: 100%;
 	margin: 0;
 	height: auto;
-	
-
+	background-image: url("../img/pexels-photo-434252.jpeg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	#missionandvisioncont {
 		width: 100%;
-		height: auto;
-		border: 1px solid black;
+		height: 400px;
+		//border: 1px solid black;
 		
 		.missionandvision {
 			width: 90%;
@@ -654,7 +709,7 @@ html,body {
 			margin:30px;
 			margin-left: auto;
 			margin-right: auto;
-			height: 50%;
+			height: 60%;
 			.missionandvissiontitle {
 				width: 100%;
 				height: 50px;
@@ -664,6 +719,8 @@ html,body {
 					width: 100%;
 					height: 100%;
 					font-size: 2em;
+					color: black;
+					font-family: "Roboto Slab" , Georgia,  serif;
 				}
 			}
 			.missionandvissiondesc {
@@ -675,6 +732,8 @@ html,body {
 					width: 100%;
 					height: 100%;
 					line-height: 140%;
+					color: black;
+					font-family: "Roboto Slab" , Georgia,  serif;
 				}
 			}
 		}
@@ -689,16 +748,16 @@ html,body {
 	#historyandabout {
 		height: auto;
 		width: 100%;
-		border: 1px solid black;
+		//border: 1px solid black;
 		.historyandaboutdevider {
 			height: 400px;
 			width: 100%;
-			border: 1px solid black;
+			//border: 1px solid black;
 			padding: 30px;
 			.size {
 				width:50%;
 				height: 100%;
-				border: 1px solid black;
+				//border: 1px solid black;
 				padding: 25px;
 			}
 			.left {
@@ -730,8 +789,16 @@ html,body {
 				margin-bottom: 25px;
 				h3 {
 					width: 100%;
+					font-family: "Roboto Slab", Cursive;
 					height: 100%;
+					color:black;
 				}
+			}
+			.historydesc {
+				 p {
+				 	color:black;
+				 	font-family: "Roboto Slab" ,Cursive;
+				 }
 			}
 		}
 	}
@@ -1055,8 +1122,11 @@ html,body {
 }
 
 #gallerycontainer {
-	background-color:$backgroundColor;
-	color:$backgroundColor;
+	background-image:url("../img/pexels-photo-434252.jpeg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%; 
+
 	text-transform: capitalize;
 	width: 100%;
 	height: auto;
@@ -1076,76 +1146,7 @@ html,body {
 			height: 100%;
 		}
 	} */
-	.compartment {
-		padding: 20px;
-		width: 100%;
-		height: 50%;
-		a {
-			outline: none;
-			height: 300px;
-			width: 49.0%;
-			text-decoration: none;
-			display: inline-block;
-			margin:0 auto;
-			.category {
-				width: 100%;
-				height: 100%;
-				margin: 0;
-				h2 {
-					text-decoration: none;
-					color:$backgroundColor;
-					width: 100%;
-					margin-top:37.34%;
-					background-color:$copyRightBg;
-					padding-top: 15px;
-					padding-bottom: 15px;
-					text-align: center;
-					@include textShadow(0px, 0px, 10px, #2a2a2a);
-				}
-				&:hover {
 
-				}
-			}
-			#facilitiesgallery {
-				background-image:url("../img/_MG_3638.JPG");
-				@include galleryconfig;
-				&:hover {
-					border: 3px solid $coffteaThemeColor;
-					@include boxShadow(0px, 0px , 15px , #2a2a2a);
-				}
-			}
-			#membersgallery {
-				background-image:url("../img/_MG_3467.JPG");
-				@include galleryconfig;
-				&:hover {
-					border: 3px solid $coffteaThemeColor;
-					@include boxShadow(0px, 0px , 15px , #2a2a2a);
-				}
-			}
-			#foodsgallery {
-				background-image: url("../img/_MG_3461.JPG");
-				@include galleryconfig;
-				&:hover {
-					border: 3px solid $coffteaThemeColor;
-					@include boxShadow(0px, 0px , 15px , #2a2a2a);
-				}
-			}
-			#eventsgallery {
-				background-image:url("../img/_MG_3618.JPG");
-				@include galleryconfig;
-				&:hover {
-					border: 3px solid $coffteaThemeColor;
-					@include boxShadow(0px, 0px , 15px , #2a2a2a);
-				}
-			}	
-		}
-		a:first-child {
-			margin-right: 5px;
-		}
-		a:last-child {
-			margin-left: 5px;
-		}
-	}
 }
 
 #ktvimg {
@@ -1217,28 +1218,32 @@ html,body {
 #maincontainer {
 	width: 100%;
 	height: auto;
-	background-color: rgba(255 , 255 , 255 , 0.8);
+	background-image :url("../img/pexels-photo-434252.jpeg");
+	background-attachment: fixed;
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 }
 .newfeatured {
 	width: 100%;
 	height: 360px;
-	border: 1px solid black;
+	//border: 1px solid black;
 	padding: 30px;
-	background-color:whitesmoke;
 	.featuredandnew {
 		width: 45%;
 		display: inline-block;
 		height: 300px;
-		border: 1px solid black;
+		//border: 1px solid black;
 		.featureandnewtitle {
 			width: 100%;
-			border-bottom: 1px solid black;
+			//border-bottom: 1px solid black;
 			height: 12%;
 			text-align: center;
 			font-size: 1.5em;
 			h3 {
 				width: 100%;
 				height: 100%;
+
 
 			}
 		}
@@ -1261,52 +1266,69 @@ html,body {
 }
 #featuredandnewproductcontainer {
 	width: 40%;
-	height: 100%;
-	border:1px solid black;
+	height: 1190px;
+	//border:1px solid black;
 	float: left;
+	background-color:rgba(17 , 17 , 17 ,0.6);
 	.newproduct {
-		border:1px solid black;
+		//border:1px solid black;
 		padding: 5px;
 		padding-left: 15px;
 		padding-right: 15px;
 		height: 350px;
-
+		padding-top: 20px;
+		margin-top: 30px;
+		
 	}
-	.featuredproduct {
-		border:1px solid black;
-		height: 350px;
-		margin-top: 60px;
-		padding: 5px;
-		padding-left: 15px;
-		padding-right: 15px;
+	#scrolldownfeatured {
+		margin-top:50px;
+		overflow-y: scroll;
+		overflow-x:hidden;
+		background-color:rgba(0 , 0 , 0 , 0.3);
+		border-top:5px dashed rgb(132, 11, 14); 
+		.featuredproduct {
+			//border:1px solid black;
+			height: 350px;
+			//margin-top: 60px;
+			padding: 5px;
+			padding-left: 15px;
+			padding-right: 15px; @import url('https://fonts.googleapis.com/css?family=Satisfy');
+		}
+		.featuredproduct:last-child {
+			margin-top: 50px;
+			height: 370px;	
+		}
 	}
-	.featuredproduct:last-child {
-		margin-top: 50px;
-		height: 375px;	
-	}
+	
 }
 .newandfeattitle {
-	border-bottom: 1px solid black;
-	height: 15%;
+	//border-bottom: 1px solid black;
+	height:17%;
 	text-transform: capitalize;
 	text-align: center;
 	h3 {
-		height: 100%;
-		font-size: 1.5em;
+		//height: 100%;
+		font-size: 1.7em;
+		color:white;
+		font-family: "Satisfy" , Cursive;
 		width: 100%;
+		@include textShadow(0px , 0px,  10px, #1a1a1a);
 	}			
 }
 .newprodandfeatureimg {
 	width: 100%;
 	height:80%;
-	border: 1px solid black;
+	//border: 1px solid black;
 	padding: 10px;
+	background-color: rgba(255 , 255 ,255 , 0.5);
+	@include boxShadow(0px , 0px , 10px , #000);
 	figure {
 		width: 100%;
 		height: 100%;
 		margin: 0;
 		padding: 0;
-		border: 1px solid gray;
+		//border: 1px solid gray;
+
 		img {
 			width: 100%;
 			height: 100%;
@@ -1318,28 +1340,31 @@ html,body {
 	height: auto;
 	width: 60%;
 	display: inline-block;
-	border: 1px solid black;
-	background-color: rgba(255 , 255 , 255 , 0.8);
+	//border: 1px solid black;
+	//background-color: transparent;
+	background-color:rgba(0 , 0 , 0 , 0.7);
 	.bestsellerdevider {
 		
 		width:100%;
-		border: 1px solid black;
+		//border: 1px solid black;
 		height: 1202px;
 		margin: 0;
 		.bestsellertitle {
-			background-color: #C3272B;
+			//background-color: #C3272B;
 			color:whitesmoke;
-			@include boxShadow(0px, 0px , 5px, #1a1a1a);
+	
 			width: 100%;
 			height: 70px;
 			font-size: 1.5em;
 			text-align: center;
 			//border: 1px solid black;
 			margin-bottom: 20px;
+			@include textShadow(0px , 0px , 10px, #000);
 			h3 {
 				width: 100%;
 				height: 100%;
-				padding-top: 15px;
+				padding-top: 30px;
+				font-family: "Satisfy" , cursive , georgia , serif;
 			}
 		}
 		.seller {
@@ -1348,13 +1373,13 @@ html,body {
 			height: 200px;
 			
 			@include boxShadow(0px , 0px , 10px , #3a3a3a);
-			background-color:rgba(255 , 255 ,255 , 0.9);
+			//background-color:rgba(255 , 255 ,255 , 0.5);
 			margin: 10px;
 			margin-left: 40px;
 			padding: 10px;
 			@include transitionConfiguration(linear , .2s);
 			&:hover {
-					background-color: #E68364;
+					background-color:whitesmoke;
 					@include boxShadow(0px , 0px , 10px , #2a2a2a);
 			}
 			figure {
@@ -1411,229 +1436,53 @@ html,body {
 	background-position: center;
 }
 #menucontainer {
-	.menucategory {
-		width: 100%;
-		height: 100px;
-		border: 1px solid black;
-		.category {
-			width: 30%;
-			height: 50px;
-			margin: 10px;
-			margin-top: 25px;
-			border: 1px solid black;
-			display: inline-block;
-			text-align: center;
-
-			a {
-				width: 100%;
-				height: 100%;
-				padding-top: 15px;
-				display: inline-block;
-				text-decoration: none;
-				text-transform: uppercase;
-				color:gray;
-				&:hover {
-					color:$goldenfallenleaves;
-				}
-			}
-		}
-		.category:first-child {
-			margin-left: 40px;
-		}
-	}
-	width: 100%;
-	height: auto;
-	border:1px solid black;
-	.menudevider {
-		width: 100%;
-		height: auto;
-		//border: 1px solid black;
-		.menutitle {
-			margin:0;
-			height: 70px;
-			border: 1px solid black;
-			width: 100%;
-			text-align: center;
-			padding-top: 25px;
-			padding-bottom: 30px;
-			h2 {
-				width: 100%;
-				font-size: 2em;
-				height: 100%;
-			}
-		}
-		.dishtitle {
-			width: 100%;
-			height: 50px;
-			font-size: 2em;
+	background-image: url("../img/pexels-photo-434252.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	.menudeviders {
+		width:100%;
+		height:auto;
+		border:1px solid black;
+		.menutitle  {
+			width:100%;
+			height:120px;
+			border:1px solid black;
+			padding:30px;
 			h3 {
-				padding-top: 10px;
-				width: 100%; height:100px;
-
-				padding-left: 10px;
+				width:100%;
+				height:100%;
+				text-align:center;
+				span {
+					
+					font-size:2.2em;
+					color:whitesmoke;
+					font-family: "Satisfy" , cursive , georgia , serif;
+				}
 			}
 		}
-		.menudivider {
-			width: 100%;
-			.categorytitle {
-				margin-top: 20px;
-				background-color: brown;
-				padding: 10px;
-				text-align: center;
+		.menucategory {
+			width:100%;
+			height:300px;
+			border:1px solid red;
+			//padding-top:0px;
+			.dishtitle {
+				width:100%;
+				height:20%;
+				border:1px solid black;
 			}
-			.dishes {
-				width: 225px;
-				height: 200px;
-				border: 1px solid lightgray;
-				margin: 15px;
-				display: inline-block;
-				padding-top: 155px;
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: 100% 100%;
-				@include boxShadow(0px , 0px , 10px ,  #2a2a2a);
-		
-				.dishtitleanddesc {
-					height: 45px;
-					width: 100%;
-					border-top:1px solid gray;
-					background-color: whitesmoke;
-					text-align: center;
-					opacity: 0.7;
-					margin: 0;
-					font-size: 1em;
-					text-transform: capitalize;
-					@include textShadow(0px , 0px , 5px , #1a1a1a);
-					h5 {
-						font-size: 1em;
-					}
-					p {
-						font-size: .9em;
-						text-transform: capitalize;
-					}
-		
+			.dishcatcontainer {
+				height:80%;
+				width:100%;
+				padding:20px;
+				//background-color:red;
+				.dishcat {
+					width:100%;
+					height:100%;
+					margin:0 auto;
+					border:1px solid black;
 				}
 			}
-		
-		
-			.dishone {background-image: url("../img/menus/Starter/hash brown.png");}
-			.dishtwo {background-image: url("../img/menus/Starter/chicharap.jpg");}
-			.dishthree{background-image: url("../img/menus/Starter/achara.jpg");}
-			.dishfour {background-image: url("../img/menus/Starter/kimchi.jpg");}
-			.dishfive {background-image: url("../img/menus/Starter/fries.jpg");}
-			#dishsix {background-image: url("../img/menus/Starter/lumpiang shanghai.jpg");}
-			.dishseven{background-image: url("../img/dishes/cofftea/starter/_MG_4357.JPG");}
-			.disheigth {background-image: url("../img/menus/Starter/cheesy bacon fries.jpg");}
-			.dishnine {background-image: url("../img/menus/Starter/buffalo wing.jpg");}
-			.dishten { background-image: url("../img/menus/Starter/fish and fries.jpg");}
-			.dish11 { background-image: url("../img/menus/Burgers and Sandwiches/chicken sandwhich.jpg"); }
-			.dish12 {background-image: url("../img/menus/Burgers and Sandwiches/ham and egg sandwich.jpg");}
-			.dish13 {background-image: url("../img/menus/Burgers and Sandwiches/cheese burger.jpg");}
-			.dish14 {
-				background-image: url("../img/dishes/cofftea/burger and sandwiches/_MG_4361.JPG");
-				.dishtitleanddesc {
-					h5 {
-						font-size: .9em;
-					}
-					p {
-						font-size: .8em;
-						text-transform: capitalize;
-					}
-				}
-			}
-			.dish15 {background-image: url("../img/menus/Burgers and Sandwiches/midnight cheesy burger.jpg");}
-			.dish16 {background-image: url("../img/dishes/cofftea/pizza/_MG_4382.JPG");}
-			.dish17 {background-image: url("../img/menus/pizza/pepperoni.jpg");}
-			.dish18 {
-				background-image: url("../img/menus/pizza/margherita.jpg");
-			}
-			.dish19 {background-image: url("../img/menus/pizza/tree cheese.jpg");}
-			.dish20	{background-image: url("../img/dishes/cofftea/pizza/_MG_4363.JPG");}
-			.first-child {
-				margin-left: 40px;
-			}
-			.dish21 {background-image: url("../img/menus/soup/crab and corn soup.jpg");}
-			.dish22 {background-image: url("../img/menus/soup/nido soup.jpg");}
-			.dish23 {background-image: url("../img/menus/soup/mashroom soup.jpg");}
-			.dish24 {background-image: url("../img/menus/soup/lomi.jpg");}
-			.dish25 {background-image: url("../img/menus/main course/Tapsilog.jpg");}
-			.dish26 {background-image: url("../img/menus/main course/tocilog.jpg");}
-			.dish27 {background-image: url("../img/menus/main course/noksilog.jpg");}
-			.dish28 {background-image: url("../img/menus/main course/buttered garlic chicken.jpg");}
-			.dish29 {background-image: url("../img/dishes/cofftea/main course/_MG_4259.JPG");}
-		
-			
-			.dish30 { background-image: url("../img/menus/Hot Drinks/brewed coffee.JPG");}
-			.dish31 {background-image: url("../img/menus/Hot Drinks/cafe americano.jpg");}
-			.dish32 {background-image: url("../img/menus/Hot Drinks/cafe latte.jpg");}
-			.dish33 {background-image: url("../img/menus/Hot Drinks/cappuccino.jpg");}
-			.dish34 {background-image: url("../img/menus/Hot Drinks/Cafe_Mocha.jpg");}
-
-			.dish35 {background-image: url("../img/menus/iced coffee/iced americano.jpg");}
-			.dish36 {background-image: url("../img/menus/iced coffee/iced latte.jpeg");}
-			.dish37 {background-image: url("../img/menus/iced coffee/iced mocha.jpg");}
-			.dish38 {background-image: url("../img/menus/iced coffee/iced white mocha.jpg");}
-			.dish39 {background-image: url("../img/menus/iced coffee/iced caramel.jpg");}
-
-			.dish40 {background-image: url("../img/menus/frappuccino/mocha.JPG");}
-			.dish41 {background-image: url("../img/menus/frappuccino/white mocha.jpg");}
-			.dish42 {background-image: url("../img/menus/frappuccino/caramel.jpg");}
-			.dish43 {background-image: url("../img/menus/frappuccino/tiramisu.jpg");}
-			.dish44 {background-image: url("../img/menus/frappuccino/french mocha.jpg");}
-
-			.dish45 {background-image: url("../img/menus/signature drinks/cookies and cream.jpg");}
-			.dish46 {background-image: url("../img/menus/signature drinks/java chip.jpg");}
-			.dish47 {background-image: url("../img/menus/signature drinks/madagascar vanilla.jpg");}
-			.dish48 {background-image: url("../img/menus/signature drinks/matcha green tea.jpg");}
-			.dish49 {background-image: url("../img/menus/signature drinks/dark chocolate.jpg");}
-
-			.dish50 {background-image: url("../img/menus/itallian soda/strawberry.jpg");}
-			.dish51 {background-image: url("../img/menus/itallian soda/green apple.jpg");}
-			.dish52 {background-image: url("../img/menus/itallian soda/passion fruit.jpg");}
-			.dish53 {background-image: url("../img/menus/itallian soda/blue raspberry.jpg");}
-			.dish54 {background-image: url("../img/menus/itallian soda/mango.jpg");}
-			.dish55 {background-image: url("../img/dishes/cofftea/dessert/20171022_155623.jpg");}
-			.dish56 {background-image: url("../img/dishes/cofftea/dessert/20171022_155055.jpg");}
-			.dish57 {background-image: url("../img/dishes/cofftea/dessert/20171022_155026.jpg");}
-			.dish58 {background-image: url("../img/dishes/cofftea/dessert/20171022_154948.jpg");}
-			.dish59 {background-image: url("../img/dishes/cofftea/dessert/20171022_155149.jpg");}
-			.dish60 {background-image: url("../img/dishes/cofftea/dessert/_MG_3739.JPG");}
-			.dish61 {background-image: url("../img/dishes/cofftea/dessert/_MG_3736.JPG");}
-			.dish62 {background-image: url("../img/dishes/lago/grill station/grilled platter.jpg");}
-			.dish63 {background-image: url("../img/dishes/lago/grill station/spare ribs.jpeg");}
-			.dish64 {background-image: url("../img/dishes/lago/grill station/grilled liempo.jpg");}
-			.dish65 {background-image: url("../img/dishes/lago/grill station/pork bbq.jpg");}
-			.dish66 {background-image: url("../img/dishes/lago/grill station/tilapia.jpg");}
-			.dish67 {background-image: url("../img/dishes/lago/grill station/bangus.jpg");}
-			.dish68 {background-image: url("../img/dishes/lago/grill station/pusit.jpg");}
-			.dish69 {background-image: url("../img/dishes/lago/grill station/tuna.jpg");}
-			.dish70 {background-image: url("../img/dishes/lago/grill station/blue marlin.jpg");}
-			.dish71 {background-image: url("../img/dishes/lago/grill station/chicken feet.jpg");}
-
-
-			.dish72 {background-image: url("../img/dishes/lago/must try/chicken barbecue with rice.JPG");}
-			.dish73 {background-image: url("../img/dishes/lago/must try/grilled liempo with rice.jpg");} 
-			.dish74 {background-image: url("../img/dishes/lago/must try/2 pcs pork barbecue with rice.JPG");}
-			.dish75 {background-image: url("../img/dishes/lago/must try/spare ribs with rice.jpg");}
-			.dish76 {background-image: url("../img/dishes/lago/must try/_MG_4254.JPG");}
-			.dish77 {background-image: url("../img/dishes/lago/must try/bagnet.jpg");}
-			.dish78 {background-image: url("../img/dishes/lago/must try/_MG_4253.JPG");}
-			.dish79 {background-image: url("../img/dishes/lago/must try/dynamite.jpg");}
-			.dish80 {background-image: url("../img/dishes/lago/must try/chicken bbq.jpg");}
-			.dish81 {background-image: url("../img/dishes/lago/must try/buffalo wing.jpg");}
-
-			.dish82 {background-image: url("../img/dishes/lago/drinks/san mig light.jpg");}
-			.dish83 {background-image: url("../img/dishes/lago/drinks/san mig flavour beer.png");}
-			.dish84 {background-image: url("../img/dishes/lago/drinks/red horse stallion.jpg");}
-			.dish85 {background-image: url("../img/dishes/lago/drinks/pale pilsen short.jpg");}
-			.dish86 {background-image: url("../img/dishes/lago/drinks/tanduay.jpg");}
-			.dish87 {background-image: url("../img/dishes/lago/drinks/san mig zero.jpg");}
-			.dish88 {background-image: url("../img/dishes/lago/drinks/san mig premium.jpg");}
-			.dish89 {background-image: url("../img/dishes/lago/drinks/smirnoff mule.jpg");}
-			.dish90 {background-image: url("../img/dishes/lago/drinks/sprite.jpg");}
-			.dish91 {background-image: url("../img/dishes/lago/drinks/mineral water.jpg");}
-
-
 		}
 	}
 }
@@ -1653,7 +1502,7 @@ html,body {
 .servicescontainer {
 	height: auto;
 	width: 100%;
-	background-color: whitesmoke;
+	background-color: transparent;
 	.categoryoption{
 		height: 100px;
 		width: 100%;
@@ -1668,7 +1517,7 @@ html,body {
 			text-align: center;
 			@include boxShadow(0px , 0px , 1px , #000);
 			@include transitionConfiguration(linear , .2s);
-			@include transitionConfiguration(linear , .2s);&:hover {
+			&:hover {
 				background-color: $gallery;
 			}
 			a {
@@ -1766,24 +1615,29 @@ html,body {
 		margin-top: 50px;
 		.ktvcontainer {
 			width: 100%;
-			border:1px solid black;
+			//border:1px solid black;
 			margin: 0 auto;
 			height: 400px;
 			.ktvtitle {
 				width: 100%;
 				height: 20%;
-				border-bottom:1px solid black;
+				//border-bottom:1px solid black;
+				background-color:#2a2a2a;
+				opacity: 0.8;
 				text-align: center;
+				line-height: 220%;
 				font-size: 2em;
-				h3 {
+				h4 {
 					width: 100%;
 					height: 100%;
-					font-size: 1.5em;
+					font-size: 1em;
+					color: white;
+					font-family: "Satisfy" , Cursive;
 				}
 			}
 			.rooms {
 				width: 31%;
-				border: 1px solid black;
+				//border: 1px solid black;
 				height: 300px;
 				display: inline-block;
 				margin: 10px;
@@ -1794,16 +1648,11 @@ html,body {
 					text-align: center;
 					margin: 0 auto;
 					border: 3px solid whitesmoke;
-					@include boxShadow(0px , 0px , 5px , #000);
-					a {
-						width: 100%;
-						height: 100%;
-						display: block;
-						padding-top: 10px;
-
-						font-weight: bold;
-						text-decoration: none;
-						color:whitesmoke;
+					padding-top: 10px;
+					font-weight: bold;	
+					color:whitesmoke;
+					&:hover  {
+						cursor: pointer;
 					}
 				}
 			}
@@ -1832,13 +1681,12 @@ html,body {
 		width: 100%;
 		
 		height: 500px;
-		border:1px solid black;
+		//border:1px solid black;
 		padding: 10px;
-		padding-top: 50px;
+		padding-top: 25px;
 		.martinascontainer {
 			width: 97%;
 			height: 400px;
-			border:3px solid  lightgray;
 			margin: 0 auto;
 			@include transitionConfiguration(ease , .3s);
 			&:hover {
@@ -1848,9 +1696,10 @@ html,body {
 				height: 20%;
 				width: 100%;
 				background-color: #2a2a2a;
-				opacity: 0.9;
+				opacity: 0.8;
 				//border-bottom: 1px solid black;
 				h3 {
+					font-family: "Satisfy" , Cursive;
 					width: 100%;
 					height: 100%;
 					font-size: 2em;
@@ -1887,7 +1736,7 @@ html,body {
 						margin-right: 50px;
 					}
 				}
-				.details {
+				#details {
 					margin: 0 auto;
 					margin-top: 18%;
 					height: 50px;
@@ -1895,15 +1744,10 @@ html,body {
 					border: 3px solid whitesmoke;
 					text-align: center;
 					@include boxShadow(0px , 0px , 10px , #1a1a1a);
-					a{
-						font-weight:bold;
-						width:100%; 
-						height: 100%;
-						display: block;
-						padding-top: 13px;
-						text-decoration: none;
-						color:whitesmoke;
-					}
+					font-weight:bold;
+					display: block;
+					padding-top: 13px;
+					color:whitesmoke;
 				}
 			}
 		}
@@ -1913,10 +1757,10 @@ html,body {
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	background-color: #000;
+	background-color:rgba(0 , 0, 0 , 0.8);
 	overflow:hidden;
 	z-index: 1;
-	opacity: 0.9;
+	//opacity: 0.9;
 	#overlaybuttoncontainer {
 
 		height:100px;
@@ -1964,7 +1808,7 @@ html,body {
 		height: 100px;
 		margin: 0 auto;
 		border:1px solid white;
-		background-color:#000;
+		background-color:rgba(0,0,0, 0.8);
 		color:white;
 		padding-top: 30px;
 		text-align: center;
@@ -1991,55 +1835,103 @@ html,body {
 	}
 }		
 #facilitiescontainer {
-	background-color: $gallery;
+	background-image: url("../img/pexels-photo-434252.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
 	width: 100%;
 	height: 1000px;
-	//border: 1px solid black;
-
-	.facilitiesdivider {
+	border: 1px solid black;
+	padding: 30px;
+	padding-top: 70px;
+	.facilitiesdevider {
 		width: 100%;
 		height: 50%;
-		//border: 1px solid black;
-		//padding: 50px;
-		.containers {
-			height: 300px;
-			height: 90%;
-			width: 46%;
-			border: 3px solid lightgray;
-			float: left;
-			margin: 10px;
-			padding-top: 25%;
-			.moreinfo {
-				width: 130px;
-				height: 50px;
-				border: 3px solid whitesmoke;
-				margin: 0 auto;
-				@include boxShadow(0px , 0px , 10px , #1a1a1a);
-				@include transitionConfiguration(linear , .2s);
-				&:hover {
-					background: $gallery;
-					opacity: 0.7;
-					a {
-						color:#000;
-						text-shadow:0px 0px  0px none;
-					}
-				}
-				a {
-					display: block;
-					width: 100%;
-					height: 100%;
-					text-align: center;
-					padding: 10px 15px;
-					padding-top: 10px;
-					padding-bottom: 15px;
-					text-decoration: none;
-					color:whitesmoke;
-					font-weight: bold;
-					@include transitionConfiguration(linear , .2s);
-				}
+		//border:1px solid black;
+			
+		#coffteafacility {
+			width: 614px;
+			height: 80%;
+			margin: 0 auto;
+			//border: 1px solid black;
+			padding-top: 10%;
+			@include imageProperties("../img/coffteahistoryimg.jpg");
+			@include transitionConfiguration(linear, .2s);
+			&:hover {
+				@include boxShadow(0px, 0px , 15px , #1a1a1a);
+	
 			}
 		}
+		#martinasfacility {
+			@include imageProperties("../img/martinas.JPG");
+			@include transitionConfiguration(linear, .2s);
+			&:hover {
+				@include boxShadow(0px, 0px , 15px , #1a1a1a);
+			}
+		}
+		#ktvfacility {
+			@include imageProperties("../img/_MG_3582.JPG");
+			@include transitionConfiguration(linear, .2s);
+			&:hover {
+				@include boxShadow(0px, 0px , 15px , #1a1a1a);
 
+			}
+		}
+		#martinasfacility, #ktvfacility  , #coffteafacility{
+			padding-top: 20%;
+		}
+		.seperator {
+			width: 48%;
+			float: left;
+			height: 80%;
+			//border: 1px solid black;
+		}
+		.seperator:first-child {
+			margin-right: 51px;
+		}
+		.facilitiestitle  {
+			width: 100%;
+			height: 20%;
+			//border: 1px solid black;
+			text-align: center;
+			padding-top: 20px;
+			h3 {
+				font-size: 2em;
+				color:whitesmoke;
+				font-family: "Satisfy", Cursive;
+				@include textShadow(0px , 0px , 10px , #1a1a1a);
+			}
+		}
+		.martinasandktvtitle {
+			width: 50%;
+			float: left;
+			height: 20%;
+			//border: 1px solid black;
+			text-align: center;
+			padding-top: 20px;
+			h3 {
+				font-size: 2em;
+				font-family: "Satisfy", Cursive;
+				color:white;
+				@include textShadow(0px , 0px , 10px , #1a1a1a);
+			}
+		}
+		.show {
+			width:150px;
+			height: 70px;
+			padding-top: 20px;
+			text-align: center;
+			padding-left: 10px;
+			padding-right: 10px;
+			border: 3px solid white;
+			margin: 0 auto;
+			color:whitesmoke;
+			@include textShadow(0px , 0px , 10px ,#1a1a1a);
+			@include boxShadow(0px ,0px , 10px, #2a2a2a);
+			&:hover {
+				cursor: pointer;
+			}
+		}
 	}
 }		
 
@@ -2048,6 +1940,8 @@ html,body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
+	margin: 0 auto;
+	float: none;
 }
 #martinascontainer {
 	background-image: url("../img/facilities/_MG_3618.JPG");
@@ -2094,50 +1988,175 @@ html,body {
 #gallerycontainer {
 	width: 100%;
 	height: auto;
-	border:1px solid black;
+	//border:1px solid black;
 	.gallerydevider {
 		width: 100%;
-		height: 50%;
+		height: 650px;
 		padding: 30px;
-		border: 1px solid black;
-		.gallerycatalog {
-			width: 45.5%;
-			height: 300px;
-			border: 1px solid black;
-			display: inline-block;
-			padding-top: 10%;
+		//border: 1px solid black;
+		background-color:rgba(0 , 0 ,0 ,0.7);
+		.gallerytitle {
+			width: 100%;
+			height: 50px;
+			border:1px solid black;
+			background-color:rgba(0 , 0 ,0 ,0.7);
+
 			text-align: center;
-			.captiongallery  {
+			font-size: 1.2em;
+			color: white;
+			line-height: 230%;
+			h3 {
+				font-family: "Satisfy" , Cursive;
+				@include textShadow(0px , 0px , 10px , #000);	
+			}
+		}
+		.imgcollecandlarimgcontainer {
+			width: 100%;
+			height: 80%;
+			border: 1px solid black;
+			margin-top: 10px;
+			background-color:rgba(0 , 0 ,0 ,0.7);
+			//opacity: 0.8;
+			padding:5px;
+			.imgcollection {
+				width: 65%;
+				height: 100%;
+				border:1px solid black;
+				float: left;
+				#productcollection , #partiescollection , #customercollection {
+					width: 100%;
+					height: 100%;
+					.collectiondevider {
+						width: 100%;
+						border: 1px solid black;
+						height: 33.3%;
+						figure {
+							width: 25%;
+							height: 100%;
+							float: left;
+							margin: 0;
+							border: 1px solid black;
+							img {
+								width: 100%;
+								height: 100%;
+								background-position: center;
+								background-repeat: no-repeat;
+							}
+						}
+					}
+				}
+
+			}
+			.largeimg {
+				width: 35%;
+				padding: 5px;
+				float: left;
+				height: 100%;
+				border: 1px solid black;
+				.imgzoom {
+					width: 100%;
+					height: 85%;
+					border: 1px solid black;
+					#imgzoomproduct {
+						width:100%;
+						height: 100%;
+						img {
+							width: 100%;
+							height: 100%;
+							background-position: center;
+							background-repeat: no-repeat;
+						}
+					}
+				}
+				.zoomarrow {
+					width: 100%;
+					height: 15%;
+					border: 1px solid black;
+					color:black;
+					font-weight: bold;
+					text-align: center;
+					.arrow {
+						width: 50%;
+						float: left;
+						font-size: 2em;
+						display: inline;
+						color: white;
+					}
+				}
+			}
+		}
+	}
+	.gallerydevider:first-child {
+		padding-top: 50px;
+	}
+}
+
+
+#megadropdownmenu {
+	display: none;
+
+	transition: linear .2s;
+}
+#navbar ul li:hover  {
+	position: relative;
+	
+}
+
+#navbar ul li:hover #megadropdownmenu {
+
+	@include transitionConfiguration(linear , .2s);
+	
+	display: block;
+	position: absolute;
+	width: 99.5vw;
+	height: 370px;
+	background-color: $coffteaThemeColor;
+	opacity: 0.8;
+	top: 60px;
+	left: -715px;
+	margin-top: 30;
+	@include boxShadow(0px ,0px , 10px ,#2a2a2a);
+	.categorymenus{
+
+		width: 32.5%;
+		display: inline-block;
+		height: 90%;
+		padding: 30px;
+		padding-left: 50px;
+		background-color: $coffteaThemeColor;
+
+		.categorydropdowntitle {
+			font-size: .8em;
+			padding-left:7px;
+			width: 100%;
+			h3 {
+				width: 100%;
+				height: 100%;
 				color:whitesmoke;
-				font-size: 2em;
-				p {
-					color: whitesmoke;
-				}
-			}
-			.moreimg {
-				width: 100px;
-				height: 50px;
-				margin: 0 auto;
-				margin-top: 30px;
-				border: 1px solid whitesmoke;
+
+			}		
+		}
+		ul {
+			display: block;
+			width: 100%;
+			background-color:$coffteaThemeColor;
+			height: 100%;
+			
+			li {
+				height: 20px;
+				width: 100%;
+				margin: 5px;
+				padding: 5px;
+				display: block;
+
 				a {
-					text-decoration: none;
-					height: 100%; width: 100%;
-					color:whitesmoke;
+					font-size:.8em;
 					display: block;
-					padding-top: 13px;
+					text-transform: capitalize;
 				}
 			}
-		}
-		.gallerycatalog:first-child {
-			margin-right: 30px;
-			margin-left: 3.1%;
-		}
-		#gallerybands {
-			background-image: url("../img/gallery/bands.JPG");
-			background-size: 100% 100%;
-			background-position: center;
-			background-repeat: no-repeat;
 		}
 	}
 }
+
+
