@@ -19,13 +19,161 @@
 
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="../css/lagocafeStyle.css">
-	<style>
-		.descriptiontxt {
-			display: none;
-		}
+	<style type="text/css">
+		
 	</style>
 </head>
 <body>
+	<div id="overlayIndividual">
+		<div class="closebuttoncontainer">
+			<div id="closebutton">
+				<img src="../img/buttons/ex.png" width="100%" height="100%" alt="">
+			</div>
+		</div>
+		<div class="overlayImgContainer">
+			<div class="imgcontainer">
+				<figure>
+					<img src="../img/new images/1152017/starter/Hash Brown.jpg" >
+				</figure>
+				 <div class="individualDescription">
+					 <h4>Hash Brown (2 pcs)</h4>
+					 <h5>50.00 (2pc)</h5>
+				 </div>
+			</div>
+		</div>
+		<div class="overlayImgContainer">
+			<div class="imgcontainer">
+				<figure>
+					<img src="../img/menus/Starter/chicharap.jpg" alt="">	
+				</figure>
+				 <div class="individualDescription">
+					 <h4>Chicharap</h4>
+					 <h5>50.00</h5>
+				 </div>
+			</div>
+		</div>
+		<div class="overlayImgContainer">
+			<div class="imgcontainer">
+				<figure>
+					<img src="../img/menus/Starter/achara.jpg" alt="ImageTwo">
+				</figure>
+				 <div class="individualDescription">
+					 <h4>Achara</h4>
+					 <h5>50.00</h5>
+				 </div>
+			</div>
+		</div>
+		<div class="overlayImgContainer">
+			<div class="imgcontainer">
+				<figure>
+					<img src="../img/new images/1152017/starter/Kimchy.jpg" alt="ImageTwo">
+				</figure>
+				 <div class="individualDescription">
+					 <h4>Kimchy</h4>
+					 <h5>60.00</h5>
+				 </div>
+			</div>
+		</div>
+		<div class="overlayImgContainer">
+			<div class="imgcontainer">
+				<figure>
+					<img src="../img/new images/1152017/starter/Fries.jpg" alt="ImageTwo">
+				</figure>
+				 <div class="individualDescription">
+					 <h4>Fries</h4>
+					 <h5>60.00</h5>
+				 </div>
+			</div>
+		</div>
+		<div class="overlayImgContainer">
+			<div class="imgcontainer">
+				<figure>
+					<img src="../img/menus/Starter/lumpiang shanghai.jpg" alt="ImageTwo">
+				</figure>
+				 <div class="individualDescription">
+					 <h4>Lumpiang Shanghai</h4>
+					 <h5>100.00</h5>
+				 </div>
+			</div>
+		</div>
+		<div class="overlayImgContainer">
+			<div class="imgcontainer">
+				<figure>
+					<img src="../img/new images/1152017/starter/Mojos.jpg" alt="ImageTwo">
+				</figure>
+				 <div class="individualDescription">
+					 <h4>Mojos</h4>
+					 <h5>100.00</h5>
+				 </div>
+			</div>
+		</div>
+		<div class="overlayImgContainer">
+			<div class="imgcontainer">
+				<figure>
+					<img src="../img/menus/Starter/potato wedge.jpg" alt="ImageTwo">
+				</figure>
+				 <div class="individualDescription">
+					 <h4>Potato Wedge</h4>
+					 <h5>100.00</h5>
+				 </div>
+			</div>
+		</div>
+		<div class="overlayImgContainer">
+			<div class="imgcontainer">
+				<figure>
+					<img src="../img/menus/Starter/street foods.jpg" alt="ImageTwo">
+				</figure>
+				 <div class="individualDescription">
+					 <h4>Street Foods</h4>
+					 <h5>100.00</h5>
+				 </div>
+			</div>
+		</div>
+		<div class="overlayImgContainer">
+			<div class="imgcontainer">
+				<figure>
+					<img src="../img/new images/1152017/starter/Natchos.jpg" alt="ImageTwo">
+				</figure>
+				 <div class="individualDescription">
+					 <h4>Nachos</h4>
+					 <h5>120.00</h5>
+				 </div>
+			</div>
+		</div>
+		<div class="overlayImgContainer">
+			<div class="imgcontainer">
+				<figure>
+					<img src="../img/menus/Starter/cheesy bacon fries.jpg" alt="ImageTwo">
+				</figure>
+				 <div class="individualDescription">
+					 <h4>Cheesy Bacon Fries</h4>
+					 <h5>120.00</h5>
+				 </div>
+			</div>
+		</div>
+		<div class="overlayImgContainer">
+			<div class="imgcontainer">
+				<figure>
+					<img src="../img/new images/1152017/starter/Buffalo Wings.jpg" alt="ImageTwo">
+				</figure>
+				 <div class="individualDescription">
+					 <h4>Buffalo Wings</h4>
+					 <h5>120.00</h5>
+				 </div>
+			</div>
+		</div>
+		<div class="overlayImgContainer">
+			<div class="imgcontainer">
+				<figure>
+					<img src="../img/menus/Starter/fish and fries.jpg" alt="ImageTwo">
+				</figure>
+				 <div class="individualDescription">
+					 <h4>Fish And Fries</h4>
+					 <h5>120.00</h5>
+				 </div>
+			</div>
+		</div>
+	</div>
 	<div id="container">
 		<header class="header">
 			<section id="logocontainer">
@@ -41,16 +189,16 @@
 									<h3>Drinks</h3>
 								</div>
 								<ul>
-									<li><a href="">Signature Drinks</a></li>
-									<li><a href="">Italian Soda</a></li>
-									<li><a href="">Fruit Tea</a></li>
-									<li><a href="">Hot Drinks</a></li>
-									<li><a href="">Iced Coffee</a></li>
-									<li><a href="">Frappucino</a></li>
-									<li><a href="">Yakult Drinks</a></li>
-									<li><a href="">Milk Tea</a></li>
-									<li><a href="">Smoothies</a></li>
-									<li><a href="">CockTails</a></li>
+									<li><a href="../menu/signaturedrinks.php">Signature Drinks</a></li>
+									<li><a href="../menu/italiansoda.php">Italian Soda</a></li>
+									<li><a href="../menu/fruittea.php">Fruit Tea</a></li>
+									<li><a href="../menu/hotdrinks.php">Hot Drinks</a></li>
+									<li><a href="../menu/icedcoffee.php">Iced Coffee</a></li>
+									<li><a href="../menu/frapuccino.php">Frappucino</a></li>
+									<li><a href="../menu/yakultdrinks.php">Yakult Drinks</a></li>
+									<li><a href="../menu/milktea.php">Milk Tea</a></li>
+									<li><a href="../menu/smoothies.php">Smoothies</a></li>
+									<li><a href="../menu/cocktails.php">CockTails</a></li>
 								</ul>
 							</nav>
 							<nav class="categorymenus">
@@ -58,14 +206,14 @@
 									<h3>Food</h3>
 								</div>
 								<ul>
-									<li><a href="menu/starter.php">Starter</a></li>
-									<li><a href="">Burger and Sandwiches</a></li>
-									<li><a href="">Pizza</a></li>
-									<li><a href="">Soup</a></li>
-									<li><a href="">Main Course</a></li>
-									<li><a href="">Group Meals</a></li>
-									<li><a href="">Platter</a></li>
-									<li><a href="">Pasta</a></li>
+									<li><a href="../menu/starter.php">Starter</a></li>
+									<li><a href="../menu/burgerandsandwiches.php">Burger and Sandwiches</a></li>
+									<li><a href="../menu/pizza.php">Pizza</a></li>
+									<li><a href="../menu/soup.php">Soup</a></li>
+									<li><a href="../menu/maincourse.php">Main Course</a></li>
+									<li><a href="../menu/groupmeals.php">Group Meals</a></li>
+									<li><a href="../menu/platter.php">Platter</a></li>
+									<li><a href="../menu/pasta.php">Pasta</a></li>
 								</ul>
 							</nav>
 							<nav class="categorymenus">
@@ -73,7 +221,7 @@
 									<h3>Pastries</h3>
 								</div>
 								<ul>
-									<li><a href="">Dessert</a></li>
+									<li><a href="../menu/deserts.php">Dessert</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -86,72 +234,131 @@
 			</nav> <!-- end of navbar-->
 		</header> <!-- end of header-->
 		<section id="menucontainer">
-			<div class="menudevider " id="coffteamenus">
-				<div class="menudivider coffteamenudevider">
-					<div class="categorytitle">
-						<h4>Starter</h4>
+			<div class="individualtitle">
+				<h3>Starter</h3>
+			</div>
+			<div class="individualdishcontainer">
+				<div class="row">
+					<div class="col">
+						<figure>
+							<img src="../img/new images/1152017/starter/Hash Brown.jpg" alt="">	
+							<figcaption class="dishcattitle">
+								<h4 class="dishname">Hash Brown</h4>
+								<h5 class="dishprice">50.00 (2 pcs)</h5>		
+							</figcaption>
+						</figure>
 					</div>
-					<div class="dishes first-child dishone">
-						<div class="dishtitleanddesc">
-							<h5>Hash Brown (2 PCS)</h5>
-							<p>50.00 PHP</p>
-						</div>
+					<div class="col">
+						<figure>
+							<img src="../img/menus/Starter/chicharap.jpg" alt="">	
+							<figcaption class="dishcattitle">
+								<h4 class="dishname">Chicharap</h4>
+								<h5 class="dishprice">50.00</h5>		
+							</figcaption>
+						</figure>	
 					</div>
-					<div class="dishes dishtwo">
-						<div class="dishtitleanddesc">
-							<h5>Chicharap</h5>
-							<p>50.00 PHP</p>
-						</div>
+					<div class="col">
+						<figure>
+							<img src="../img/menus/Starter/achara.jpg" alt="">	
+							<figcaption class="dishcattitle">
+								<h4 class="dishname">Achara</h4>
+								<h5 class="dishprice">50.00</h5>		
+							</figcaption>
+						</figure>
 					</div>
-					<div class="dishes dishthree">
-						<div class="dishtitleanddesc">
-							<h5>Achara</h5>
-							<p>50.00 PHP</p>
-						</div>
+					<div class="col">
+						<figure>
+							<img src="../img/new images/1152017/starter/Kimchy.jpg" alt="">	
+							<figcaption class="dishcattitle">
+								<h4 class="dishname">Kimchi</h4>
+								<h5 class="dishprice">60.00</h5>		
+							</figcaption>
+						</figure>
 					</div>
-					<div class="dishes dishfour">
-						<div class="dishtitleanddesc">
-							<h5>Kimchi</h5>
-							<p>60.00 PHP</p>
-						</div>
+					<div class="col">
+						<figure>
+							<img src="../img/new images/1152017/starter/Fries.jpg" alt="">	
+							<figcaption class="dishcattitle">
+								<h4 class="dishname">Fries</h4>
+								<h5 class="dishprice">60.00</h5>		
+							</figcaption>
+						</figure>
 					</div>
-					<div class="dishes dishfive">
-						<div class="dishtitleanddesc">
-							<h5>Fries</h5>
-							<p>60.00 PHP</p>
-						</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<figure>
+							<img src="../img/menus/Starter/lumpiang shanghai.jpg" alt="">	
+							<figcaption class="dishcattitle">
+								<h4 class="dishname">Lumpiang Shanghai</h4>
+								<h5 class="dishprice">100.00</h5>		
+							</figcaption>
+						</figure>
 					</div>
-
-					<div class="dishes first-child" id="dishsix">
-						<div class="dishtitleanddesc">
-							<h5>Lumpiang Shanghai</h5>
-							<p>100.00 PHP</p>
-						</div>
-
+					<div class="col">
+						<figure>
+							<img src="../img/new images/1152017/starter/Mojos.jpg" alt="">	
+							<figcaption class="dishcattitle">
+								<h4 class="dishname">Mojos</h4>
+								<h5 class="dishprice">100.00</h5>		
+							</figcaption>
+						</figure>
 					</div>
-					<div class="dishes dishseven">
-						<div class="dishtitleanddesc">
-							<h5>Nachos</h5>
-							<p>120.00 PHP</p>
-						</div>
+					<div class="col">
+						<figure>
+							<img src="../img/menus/Starter/potato wedge.jpg" alt="">	
+							<figcaption class="dishcattitle">
+								<h4 class="dishname">Potato Wedge</h4>
+								<h5 class="dishprice">100.00</h5>		
+							</figcaption>
+						</figure>
 					</div>
-					<div class="dishes disheigth">
-						<div class="dishtitleanddesc">
-							<h5>Cheesy Bacon fries</h5>
-							<p>120.00 PHP</p>
-						</div>
+					<div class="col">
+						<figure>
+							<img src="../img/menus/Starter/street foods.jpg" alt="">	
+							<figcaption class="dishcattitle">
+								<h4 class="dishname">Street Foods</h4>
+								<h5 class="dishprice">100.00</h5>		
+							</figcaption>
+						</figure>
 					</div>
-					<div class="dishes dishnine">
-						<div class="dishtitleanddesc">
-							<h5>Buffalo Wings</h5>
-							<p>120.00 PHP</p>
-						</div>
+					<div class="col">
+						<figure>
+							<img src="../img/new images/1152017/starter/Natchos.jpg" alt="">	
+							<figcaption class="dishcattitle">
+								<h4 class="dishname">Nachos</h4>
+								<h5 class="dishprice">120.00</h5>		
+							</figcaption>
+						</figure>
 					</div>
-					<div class="dishes dishten">
-						<div class="dishtitleanddesc">
-							<h5>Fish &amp; Fries</h5>
-							<p>120.00 PHP</p>
-						</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<figure>
+							<img src="../img/menus/Starter/cheesy bacon fries.jpg" alt="">	
+							<figcaption class="dishcattitle">
+								<h4 class="dishname">Cheesy Bacon Fries</h4>
+								<h5 class="dishprice">120.00</h5>		
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col">
+						<figure>
+							<img src="../img/new images/1152017/starter/Buffalo Wings.jpg" alt="">	
+								<figcaption class="dishcattitle">
+									<h4 class="dishname">Buffalo Wings</h4>
+									<h5 class="dishprice">120.00</h5>		
+								</figcaption>
+						</figure>
+					</div>
+					<div class="col">
+						<figure>
+							<img src="../img/menus/Starter/fish and fries.jpg" alt="">	
+							<figcaption class="dishcattitle">
+								<h4 class="dishname">Fish and Fries</h4>
+								<h5 class="dishprice">120.00</h5>		
+							</figcaption>
+						</figure>
 					</div>
 				</div>
 			</div>
@@ -160,7 +367,7 @@
 			<div id="footerinfoscontent">
 				<div class="footerdinfodevider">
 					<div class="footericon">
-						<img src="" alt="">
+						<img src="../img/cofftealogo.png" width="100%" height="100%" alt="">
 					</div>
 					<div class="footertitle">
 						<h3>Cofftea Zone</h3>
@@ -171,7 +378,7 @@
 				</div>
 				<div class="footerdinfodevider">
 					<div class="footericon">
-						<img src="" alt="">
+						<img src="../img/buttons/contactus.png" width="100%" height="60%" alt="">
 					</div>
 					<div class="footertitle">
 						<h3>Contact Number</h3>
@@ -182,16 +389,13 @@
 					</div>
 				</div>
 				<div class="footerdinfodevider">
-					<div class="footericon">
-						<img src="" alt="">
+					<div class="followicons">
+						<a href="#" class="followiconslink">
+							<img  width="35px" height="35px" src="../img/buttons/FACEBOOKLOGO.png" alt=""></a>
+						<a href="#" class="followiconslink"><img width="35px" height="35px" src="../img/buttons/google.png" alt=""></a>
 					</div>
 					<div class="footertitle">
 						<h3>Follow Us:</h3>
-					</div>
-					<div class="followicons">
-						<a href="#"><img src="" alt=""></a>
-						<a href="#"><img src="" alt=""></a>
-						<a href="#"><img src="" alt=""></a>
 					</div>
 				</div>
 			</div>
@@ -201,32 +405,43 @@
 		</footer>
 	</div>
 	<script type="text/javascript">
-		
-		/*var dishtxthover = document.getElementsByClassName("menutexthover");
-		var descriptiontxt = document.getElementsByClassName("descriptiontxt");
+		window.onload = function () {
 
-		var showDescription = function () {
-			var showIndex = this;
-			descriptiontxt[showIndex].style.display = "inline";
-			
-			for (var finder = 0 ; i < dishtxthover.length ; finder++) {
+			var Columns = document.getElementsByClassName("col");
+			var closeButton = document.getElementById("closebutton");
+			var overlayIndividual = document.getElementById("overlayIndividual");
+			var overlayImgContainer = document.getElementsByClassName("overlayImgContainer");
+			var ColumnsLength = Columns.length;
+
+			// for close button
+			closeButton.addEventListener("click" , function() {
+				overlayIndividual.style.display = "none";
+				for (var ii = 0 ; ii < ColumnsLength ; ii++) {
+					overlayImgContainer[ii].style.display = "none";
+				}
+			} , false);
+
+			var showOverlay = function() {
+				overlayIndividual.style.display = "block";
+			};
+			function checkForforEvents(number) {
 				
+				Columns[number].addEventListener("click" , function () {
+					showOverlay();
+					overlayImgContainer[number].style.display = "none";
+					overlayImgContainer[number].style.display = "block";
+				} , false);
 			}
-
-		};
-		var hideDescription = function () {
-			var hideIndex = this.length;
-			descriptiontxt[hideIndex].style.display = "none";
-		};
-
-
-		for (var i = 0 ; i < dishtxthover.length ; i++) {
-			dishtxthover[i].addEventListener('mouseover' , showDescription , false);
-		} 
-
-		for(var ii = 0 ; ii < dishtxthover.length ; ii++) {
-			dishtxthover[ii].addEventListener('mouseout' , hideDescription , false);
-		}*/
+			function InitAllEvents() {
+				
+				for (var i = 0 ; i < ColumnsLength ; i++) {
+					if (i < ColumnsLength) {
+						checkForforEvents(i);
+					}
+				}
+			}
+			InitAllEvents();
+		};	
 	</script>
 </body>
 </html>

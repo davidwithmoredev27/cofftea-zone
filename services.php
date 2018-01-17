@@ -213,7 +213,7 @@
 		<div id="ktvrooms">
 			<div id="roomone" class="rooms">
 				<div class="roomimages">
-					<figure><img src="img/ktv/room 1.JPG" alt=""></figure>
+					<figure><img src="img/ktv/ktv 1.jpg" alt=""></figure>
 				</div>
 				<div class="roomdesc">
 					<div class="roomdesctitle">
@@ -240,7 +240,7 @@
 			</div>
 			<div id="roomtwo" class="rooms">
 				<div class="roomimages">
-					<figure><img src="img/ktv/room 2.JPG" alt=""></figure>
+					<figure><img src="img/ktv/ktv 2.jpg" alt=""></figure>
 				</div>
 				<div class="roomdesc">
 					<div class="roomdesctitle">
@@ -268,7 +268,7 @@
 
 			<div id="roomthree" class="rooms">
 				<div class="roomimages">
-					<figure><img src="img/ktv/room3.JPG" alt=""></figure>
+					<figure><img src="img/ktv/iktv 3.jpg" alt=""></figure>
 				</div>
 				<div class="roomdesc">
 					<div class="roomdesctitle">
@@ -362,16 +362,16 @@
 									<h3>Drinks</h3>
 								</div>
 								<ul>
-									<li><a href="">Signature Drinks</a></li>
-									<li><a href="">Italian Soda</a></li>
-									<li><a href="">Fruit Tea</a></li>
-									<li><a href="">Hot Drinks</a></li>
-									<li><a href="">Iced Coffee</a></li>
-									<li><a href="">Frappucino</a></li>
-									<li><a href="">Yakult Drinks</a></li>
-									<li><a href="">Milk Tea</a></li>
-									<li><a href="">Smoothies</a></li>
-									<li><a href="">CockTails</a></li>
+									<li><a href="menu/signaturedrinks.php">Signature Drinks</a></li>
+									<li><a href="menu/italiansoda.php">Italian Soda</a></li>
+									<li><a href="menu/fruittea.php">Fruit Tea</a></li>
+									<li><a href="menu/hotdrinks.php">Hot Drinks</a></li>
+									<li><a href="menu/icedcoffee.php">Iced Coffee</a></li>
+									<li><a href="menu/frapuccino.php">Frappucino</a></li>
+									<li><a href="menu/yakultdrinks.php">Yakult Drinks</a></li>
+									<li><a href="menu/milktea.php">Milk Tea</a></li>
+									<li><a href="menu/smoothies.php">Smoothies</a></li>
+									<li><a href="menu/cocktails.php">CockTails</a></li>
 								</ul>
 							</nav>
 							<nav class="categorymenus">
@@ -380,13 +380,13 @@
 								</div>
 								<ul>
 									<li><a href="menu/starter.php">Starter</a></li>
-									<li><a href="">Burger and Sandwiches</a></li>
-									<li><a href="">Pizza</a></li>
-									<li><a href="">Soup</a></li>
-									<li><a href="">Main Course</a></li>
-									<li><a href="">Group Meals</a></li>
-									<li><a href="">Platter</a></li>
-									<li><a href="">Pasta</a></li>
+									<li><a href="menu/burgerandsandwiches.php">Burger and Sandwiches</a></li>
+									<li><a href="menu/pizza.php">Pizza</a></li>
+									<li><a href="menu/soup.php">Soup</a></li>
+									<li><a href="menu/maincourse.php">Main Course</a></li>
+									<li><a href="menu/groupmeals.php">Group Meals</a></li>
+									<li><a href="menu/platter.php">Platter</a></li>
+									<li><a href="menu/pasta.php">Pasta</a></li>
 								</ul>
 							</nav>
 							<nav class="categorymenus">
@@ -394,7 +394,7 @@
 									<h3>Pastries</h3>
 								</div>
 								<ul>
-									<li><a href="">Dessert</a></li>
+									<li><a href="menu/deserts.php">Dessert</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -449,7 +449,7 @@
 			<div id="footerinfoscontent">
 				<div class="footerdinfodevider">
 					<div class="footericon">
-						<img src="" alt="">
+						<img src="img/cofftealogo.png" width="100%" height="100%" alt="">
 					</div>
 					<div class="footertitle">
 						<h3>Cofftea Zone</h3>
@@ -460,7 +460,7 @@
 				</div>
 				<div class="footerdinfodevider">
 					<div class="footericon">
-						<img src="" alt="">
+						<img src="img/buttons/contactus.png" width="100%" height="60%" alt="">
 					</div>
 					<div class="footertitle">
 						<h3>Contact Number</h3>
@@ -471,16 +471,13 @@
 					</div>
 				</div>
 				<div class="footerdinfodevider">
-					<div class="footericon">
-						<img src="" alt="">
+					<div class="followicons">
+						<a href="#" class="followiconslink">
+							<img  width="35px" height="35px" src="img/buttons/FACEBOOKLOGO.png" alt=""></a>
+						<a href="#" class="followiconslink"><img width="35px" height="35px" src="img/buttons/google.png" alt=""></a>
 					</div>
 					<div class="footertitle">
 						<h3>Follow Us:</h3>
-					</div>
-					<div class="followicons">
-						<a href="#"><img src="" alt=""></a>
-						<a href="#"><img src="" alt=""></a>
-						<a href="#"><img src="" alt=""></a>
 					</div>
 				</div>
 			</div>

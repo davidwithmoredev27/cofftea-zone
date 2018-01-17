@@ -51,53 +51,53 @@
 			</div>
 
 			<div class="description" style="padding-top: 20px; margin-top: 30px;" id="descone">
-				<h4><strong>Midnight Cheesy Burger</strong></h4>
-				<p>120.00 Php</p>
+				<h4><strong>Crispy Pata</strong></h4>
+				<p>&#8369; 320.00</p>
 	
 			</div>
 			<div class="description" style="padding-top: 20px; margin-top: 30px;" id="desctwo">
 				<h4>Buttered Lemon Tanigue</h4>
-				<p><strong>200.00 Php</strong></p>
+				<p>&#8369; 200.00</p>
 
 			</div>
 			<div class="description" style="padding-top: 20px; margin-top: 30px;" id="descthree">
 				<h4><strong>Three Chesse Pizza</strong></h4>
-				<p>150.00 Php</p>
+				<p>&#8369; 150.00</p>
 			</div>
 
 			<div class="description" style="padding-top: 20px; margin-top: 30px;" id="descfour">
 				<h4><strong>Hot Chocolate</strong></h4>
-				<p>100.00 Php</p>
+				<p>&#8369; 100.00</p>
 			</div>
 			<div class="description" style="padding-top: 20px; margin-top: 30px;" id="descfive">
-				<h4><strong>Italian Soda Green Apple</strong></h4>
-				<p>60.00/50.00 Php (16 oz/22 oz)</p>
+				<h4><strong>Chicharong Bulaklak</strong></h4>
+				<p>&#8369; 150.00</p>
 			</div>
 			<div class="description" style="padding-top: 20px; margin-top: 30px;" id="descsix">
 				<h4><strong>Mexicano Sisig</strong></h4>
-				<p>150.00 Php</p>
+				<p>&#8369; 150.00</p>
 			</div>
 
 
 			<div class="description" style="padding-top: 20px; margin-top: 30px;" id="descthree">
 				<h4><strong>Boneless Bangus</strong></h4>
-				<p>88.00 Php</p>
+				<p>&#8369; 88.00</p>
 
 			</div>
 
 			<div class="description" style="padding-top: 20px; margin-top: 30px;" id="descfour">
 				<h4><strong>Crispy Pata</strong></h4>
-				<p>320.00 Php</p>
+				<p>&#8369; 320.00</p>
 
 			</div>
 			<div class="description" style="padding-top: 20px; margin-top: 30px;" id="descfive">
 				<h4><strong>Sisig Pizza</strong></h4>
-				<p>300.00 Php</p>
+				<p>&#8369; 300.00</p>
 				<p>Espresso with hot water.Guest can request their favorite blend or roast.</p>
 			</div>
 			<div class="description" style="padding-top: 20px; margin-top: 30px;" id="descsix">
 				<h4><strong>Cafe Mocha</strong></h4>
-				<p>80.00 Php</p>
+				<p>&#8369; 80.00</p>
 				
 			</div>
 	</div>
@@ -116,16 +116,16 @@
 									<h3>Drinks</h3>
 								</div>
 								<ul>
-									<li><a href="">Signature Drinks</a></li>
-									<li><a href="">Italian Soda</a></li>
-									<li><a href="">Fruit Tea</a></li>
-									<li><a href="">Hot Drinks</a></li>
-									<li><a href="">Iced Coffee</a></li>
-									<li><a href="">Frappucino</a></li>
-									<li><a href="">Yakult Drinks</a></li>
-									<li><a href="">Milk Tea</a></li>
-									<li><a href="">Smoothies</a></li>
-									<li><a href="">CockTails</a></li>
+									<li><a href="menu/signaturedrinks.php">Signature Drinks</a></li>
+									<li><a href="menu/italiansoda.php">Italian Soda</a></li>
+									<li><a href="menu/fruittea.php">Fruit Tea</a></li>
+									<li><a href="menu/hotdrinks.php">Hot Drinks</a></li>
+									<li><a href="menu/icedcoffee.php">Iced Coffee</a></li>
+									<li><a href="menu/frapuccino.php">Frappucino</a></li>
+									<li><a href="menu/yakultdrinks.php">Yakult Drinks</a></li>
+									<li><a href="menu/milktea.php">Milk Tea</a></li>
+									<li><a href="menu/smoothies.php">Smoothies</a></li>
+									<li><a href="menu/cocktails.php">CockTails</a></li>
 								</ul>
 							</nav>
 							<nav class="categorymenus">
@@ -134,13 +134,13 @@
 								</div>
 								<ul>
 									<li><a href="menu/starter.php">Starter</a></li>
-									<li><a href="">Burger and Sandwiches</a></li>
-									<li><a href="">Pizza</a></li>
-									<li><a href="">Soup</a></li>
-									<li><a href="">Main Course</a></li>
-									<li><a href="">Group Meals</a></li>
-									<li><a href="">Platter</a></li>
-									<li><a href="">Pasta</a></li>
+									<li><a href="menu/burgerandsandwiches.php">Burger and Sandwiches</a></li>
+									<li><a href="menu/pizza.php">Pizza</a></li>
+									<li><a href="menu/soup.php">Soup</a></li>
+									<li><a href="menu/maincourse.php">Main Course</a></li>
+									<li><a href="menu/groupmeals.php">Group Meals</a></li>
+									<li><a href="menu/platter.php">Platter</a></li>
+									<li><a href="menu/pasta.php">Pasta</a></li>
 								</ul>
 							</nav>
 							<nav class="categorymenus">
@@ -148,7 +148,7 @@
 									<h3>Pastries</h3>
 								</div>
 								<ul>
-									<li><a href="">Dessert</a></li>
+									<li><a href="menu/deserts.php">Dessert</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -274,7 +274,7 @@
 					</div>
 					<div class="seller firtseller sellerclick">
 						<figure>
-							<img src="img/menus/Burgers and Sandwiches/midnight cheesy burger.jpg" alt="">
+							<img src="img/bestseller/Cripy pata.jpg" alt="">
 						</figure>
 					</div>
 					<div class="seller sellerclick" >
@@ -289,12 +289,12 @@
 					</div>
 					<div class="seller sellerclick">
 						<figure>
-							<img src="img/menus/Hot Drinks/hot chocolate.jpg" alt="">
+							<img src="img/bestseller/Hot Chocolate.jpg" alt="">
 						</figure>
 					</div>
 					<div class="seller sellerclick">
 						<figure >
-							<img src="img/bestseller/cofftea/green apple soda.jpg" alt="">
+							<img src="img/bestseller/Chicharong Bulaklak.jpg" alt="">
 						</figure>
 					</div>
 					<div class="seller sellerclick">
@@ -325,13 +325,12 @@
 				</div>
 			</section>
 		</section>
-		
 
 		<footer id="footercontainer">
 			<div id="footerinfoscontent">
 				<div class="footerdinfodevider">
 					<div class="footericon">
-						<img src="img/social-facebook-circular-button.svg" width="100%" height="100%" alt="">
+						<img src="img/cofftealogo.png" width="100%" height="100%" alt="">
 					</div>
 					<div class="footertitle">
 						<h3>Cofftea Zone</h3>
@@ -342,7 +341,7 @@
 				</div>
 				<div class="footerdinfodevider">
 					<div class="footericon">
-						<img src="" alt="">
+						<img src="img/buttons/contactus.png" width="100%" height="60%" alt="">
 					</div>
 					<div class="footertitle">
 						<h3>Contact Number</h3>
@@ -353,16 +352,13 @@
 					</div>
 				</div>
 				<div class="footerdinfodevider">
-					<div class="footericon">
-						<img src="" alt="">
+					<div class="followicons">
+						<a href="#" class="followiconslink">
+							<img  width="35px" height="35px" src="img/buttons/FACEBOOKLOGO.png" alt=""></a>
+						<a href="#" class="followiconslink"><img width="35px" height="35px" src="img/buttons/google.png" alt=""></a>
 					</div>
 					<div class="footertitle">
 						<h3>Follow Us:</h3>
-					</div>
-					<div class="followicons">
-						<a href="#"><img src="" alt=""></a>
-						<a href="#"><img src="" alt=""></a>
-						<a href="#"><img src="" alt=""></a>
 					</div>
 				</div>
 			</div>

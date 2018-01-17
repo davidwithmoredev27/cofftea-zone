@@ -308,7 +308,7 @@ for (var iii = 0 ; iii < description.length ; iii++) {
 var changeColor = function() {
 	if (this === sellerclick[0]) {
 		overlay.style.display = "block";
-		imgoverlay.src = "img/menus/Burgers and Sandwiches/midnight cheesy burger.jpg";
+		imgoverlay.src = "img/bestseller/Cripy pata.jpg";
 		description[0].style.display = "block";
 	} else if (this === sellerclick[1]) {
 		overlay.style.display = "block";
@@ -320,11 +320,11 @@ var changeColor = function() {
 		description[2].style.display = "block";
 	} else if (this === sellerclick[3]) {
 		overlay.style.display = "block";
-		imgoverlay.src = "img/menus/Hot Drinks/hot chocolate.jpg";
+		imgoverlay.src = "img/bestseller/Hot Chocolate.jpg";
 		description[3].style.display = "block";
 	} else if(this === sellerclick[4]) {
 		overlay.style.display = "block";
-		imgoverlay.src = "img/bestseller/cofftea/green apple soda.jpg";
+		imgoverlay.src = "img/bestseller/Chicharong Bulaklak.jpg";
 		description[4].style.display = "block";
 	} else if (this === sellerclick[5]) {
 		overlay.style.display = "block";

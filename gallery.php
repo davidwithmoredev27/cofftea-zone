@@ -161,7 +161,7 @@
 			<div id="footerinfoscontent">
 				<div class="footerdinfodevider">
 					<div class="footericon">
-						<img src="" alt="">
+						<img src="img/cofftealogo.png" width="100%" height="100%" alt="">
 					</div>
 					<div class="footertitle">
 						<h3>Cofftea Zone</h3>
@@ -172,7 +172,7 @@
 				</div>
 				<div class="footerdinfodevider">
 					<div class="footericon">
-						<img src="" alt="">
+						<img src="img/buttons/contactus.png" width="100%" height="60%" alt="">
 					</div>
 					<div class="footertitle">
 						<h3>Contact Number</h3>
@@ -183,22 +183,20 @@
 					</div>
 				</div>
 				<div class="footerdinfodevider">
-					<div class="footericon">
-						<img src="" alt="">
+					<div class="followicons">
+						<a href="#" class="followiconslink">
+							<img  width="35px" height="35px" src="img/buttons/FACEBOOKLOGO.png" alt=""></a>
+						<a href="#" class="followiconslink"><img width="35px" height="35px" src="img/buttons/google.png" alt=""></a>
 					</div>
 					<div class="footertitle">
 						<h3>Follow Us:</h3>
-					</div>
-					<div class="followicons">
-						<a href="#"><img src="" alt=""></a>
-						<a href="#"><img src="" alt=""></a>
-						<a href="#"><img src="" alt=""></a>
 					</div>
 				</div>
 			</div>
 			<div id="copyrightcontainer">
 				<p>&copy; Cofftea Zone 2017</p>
 			</div>
+		</footer>
 	</div>
 	<script type="text/javascript" src="js/galleryanimation.js"></script>
 	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js></script> -->
